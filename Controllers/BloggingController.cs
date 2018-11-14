@@ -21,9 +21,13 @@ namespace BloggingEngine.Controllers
         [Route("blogging")]
          public IActionResult Index()
         { 
-            var newList = _bloggingContext.Blogs.ToList();
+            var allBlogs = _bloggingContext.Blogs.ToList();
+            foreach(BlogModel blog in allBlogs){
+                var author = _bloggingContext.People.Find(blog.AuthorId);
+                blog.Author= author;
+            }
             var blogList = new BlogList(); 
-            blogList.Blogs = newList;
+            blogList.Blogs = allBlogs;
             return View(blogList);
         }
 
@@ -159,6 +163,10 @@ namespace BloggingEngine.Controllers
         {
             var post = _bloggingContext.Posts.Find(Id);
             var comments = _bloggingContext.Comments.Where(_bloggingContext => _bloggingContext.PostId == Id).ToList();
+            foreach(Comment comment in comments){
+                var author = _bloggingContext.People.Find(comment.AuthorId);
+                comment.Author= author;
+            }
             post.Comments= comments;
             var people = _bloggingContext.People.ToList();
             var newcomment = new Comment();

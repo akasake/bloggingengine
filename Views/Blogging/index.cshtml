@@ -7,9 +7,9 @@
  @foreach (var item in Model.Blogs)
  {
 
-      //<td>@item.Author.FirstName @item.Author.LastName </td>
-      <h2>@item.Name </h2>
       
+      <h2>@item.Name </h2>
+      <p>by @item.Author.FirstName @item.Author.LastName  </p>
       <a type="button" class="btn btn-success" asp-controller="blogging" asp-route-id="@item.Id" asp-action="EditBlog">Edit Blogname</a>
       <a type="button" class="btn btn-success" asp-controller="blogging" asp-route-id="@item.Id" asp-action="Posts">Detail</a>
       

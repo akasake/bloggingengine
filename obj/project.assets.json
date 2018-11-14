@@ -11832,11 +11832,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\OneDrive - Thomas More\\school 2019\\ASP.NET\\ASP\\BloggingEngine\\BloggingEngine.csproj",
+      "projectUniqueName": "D:\\OneDrive - Thomas More\\school 2019\\ASP.NET\\BloggingEngine\\BloggingEngine.csproj",
       "projectName": "BloggingEngine",
-      "projectPath": "d:\\OneDrive - Thomas More\\school 2019\\ASP.NET\\ASP\\BloggingEngine\\BloggingEngine.csproj",
+      "projectPath": "D:\\OneDrive - Thomas More\\school 2019\\ASP.NET\\BloggingEngine\\BloggingEngine.csproj",
       "packagesPath": "C:\\Users\\pham_\\.nuget\\packages\\",
-      "outputPath": "d:\\OneDrive - Thomas More\\school 2019\\ASP.NET\\ASP\\BloggingEngine\\obj\\",
+      "outputPath": "D:\\OneDrive - Thomas More\\school 2019\\ASP.NET\\BloggingEngine\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
