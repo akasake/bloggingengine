@@ -1,0 +1,12 @@
+@model BloggingEngine.DataAccess.Post
+
+​<h1>Do you really want to delete this post?</h1>
+<h1>@Model.Title</h1>
+<p>@Model.Content</p>
+
+<form asp-controller="blogging" asp-action="DeletePost">
+    <div class="form-group">
+      <a type="button" class="btn btn-success" asp-controller="blogging" asp-action="Posts">Cancel</a>
+      <button type="submit" class="btn btn-danger">Yes, Delete</button>
+    </div>
+  </form>

@@ -1,0 +1,30 @@
+@model BloggingEngine.DataAccess.PostWithComment
+
+<h1>@Model.Post.Title</h1>
+<p>@Model.Post.Content</p>
+<br>
+<a type="button" class="btn btn-success" asp-controller="blogging" asp-route-id="@Model.Post.Id" asp-action="EditPost">Edit</a>
+        <a type="button" class="btn btn-danger" asp-controller="blogging" asp-route-id="@Model.Post.Id" asp-action="DeletePost">Delete</a>
+
+<h2>Comments</h2>
+@foreach(var comment in Model.Post.Comments) {
+  <h4>User: @comment.AuthorId</h4>
+  <p>@comment.Content</p>
+}
+
+<h2>Add a Comment</h2>
+<form asp-controller="blogging" asp-action="Comment" method="post">
+  <div class="form-group">
+    <label asp-for="@Model.NewComment.AuthorId">Author:</label><br>
+            <select asp-for="@Model.NewComment.AuthorId" class="form-control">
+              @foreach(var person in Model.People) {
+              <option value="@person.Id">@person.FirstName @person.LastName</option>
+            }
+            </select>
+  </div>
+  <div class="form-group">
+    <label for="text">Comment:</label>
+    <textarea asp-for="@Model.NewComment.Content" class="form-control" rows="4"></textarea>
+  </div>
+  <button type="submit" class="btn btn-success">Post</button>
+</form>

@@ -1,0 +1,22 @@
+@model BloggingEngine.DataAccess.Post
+
+<h1>Create a post in blog number @Model.BlogId</h1>
+
+<form method="post" >
+    <fieldset>
+        <div class="form-group">
+            <label for="Title">Post Title</label>
+            <input asp-for="@Model.Title" class="form-control" placeholder="The Title">
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.Content">Content:</label><br>
+            <textarea asp-for="@Model.Content" class="form-control" placeholder="@Model.Content" rows="4"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="BlogId">Blog</label>
+            <input asp-for="@Model.BlogId" class="form-control" placeholder="The Blog id">
+        </div>
+        <button type="submit" class="btn btn-primary">Create</button>
+    </fieldset>
+     
+</form>

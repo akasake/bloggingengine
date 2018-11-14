@@ -1,0 +1,16 @@
+@model BloggingEngine.DataAccess.BlogPostList
+<h1>List of posts from the blog '@Model.BlogTitle'</h1>
+<p>from @Model.Author.FirstName @Model.Author.LastName</p>
+
+ <a type="button" class="btn btn-primary" asp-controller="blogging" asp-route-id="@Model.BlogId" asp-action="createPost">Create Post</a>
+ <br>
+
+ @foreach (var item in Model.Posts)
+ {
+    <h2>@item.Title</h2>
+    <p>@item.Content</p>
+        <a type="button" class="btn btn-success" asp-controller="blogging" asp-route-id="@item.Id" asp-action="PostDetail">Detail</a>
+        <a type="button" class="btn btn-success" asp-controller="blogging" asp-route-id="@item.Id" asp-action="EditPost">Edit</a>
+        <a type="button" class="btn btn-danger" asp-controller="blogging" asp-route-id="@item.Id" asp-action="DeletePost">Delete</a>
+    <br>
+ }

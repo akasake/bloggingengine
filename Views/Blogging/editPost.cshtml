@@ -1,0 +1,22 @@
+@model BloggingEngine.DataAccess.Post
+
+<h2>Edit Post</h2>
+
+<form method="post" asp-controller="blogging" asp-action="editpost" >
+        <fieldset>
+          <div>
+            <label asp-for="@Model.Title">Title:</label><br>
+            <input asp-for="@Model.Title" class="form-control" placeholder="@Model.Title"/>
+          </div>  
+          <div>
+            <label asp-for="@Model.BlogId">Blog Id:</label><br>
+            <input asp-for="@Model.BlogId" class="form-control" placeholder="@Model.BlogId"/>
+          </div>    
+          <div>
+            <label asp-for="@Model.Content">Content:</label><br>
+            <textarea asp-for="@Model.Content" class="form-control" placeholder="@Model.Content" rows="4"></textarea>
+          </div>         
+            <input type="submit" value="Submit" asp-route-id="@Model.BlogId"/>
+          </div>
+        </fieldset>
+      </form>

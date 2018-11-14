@@ -1,0 +1,24 @@
+@model BloggingEngine.DataAccess.BlogAndPeople
+
+<h2>Create blogpost</h2>
+
+<form asp-controller="blogging" method="post" asp-action="CreateBlog">
+        <fieldset>
+          <div>
+            <label asp-for="@Model.Blog.Name">Title:</label><br>
+            <input asp-for="@Model.Blog.Name" />
+          </div>
+          <div>
+            <label asp-for="@Model.Blog.AuthorId">Author:</label><br>
+            <select asp-for="@Model.Blog.AuthorId" class="form-control">
+              @foreach(var person in Model.People) {
+              <option value="@person.Id">@person.FirstName @person.LastName</option>
+            }
+            </select>
+          </div>
+            <input type="submit" value="Submit" class="submit" />
+          </div>
+          <button type="submit" class="btn btn-primary">Create</button>
+        </fieldset>
+        
+</form>
