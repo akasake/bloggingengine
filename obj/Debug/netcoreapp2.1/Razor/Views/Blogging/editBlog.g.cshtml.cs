@@ -58,12 +58,12 @@ using BloggingEngine.Models;
             WriteLiteral("\r\n<h2>Edit Blog</h2>\r\n\r\n");
             EndContext();
             BeginContext(68, 358, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76326ae793374ebd87e52d961c2828a7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "43f755cc5a4747ecaca3c316e4e9e016", async() => {
                 BeginContext(89, 51, true);
                 WriteLiteral("\r\n        <fieldset>\r\n          <div>\r\n            ");
                 EndContext();
                 BeginContext(140, 43, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("label", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4e1d962f3ad64b26bc6a85d8c377f4a3", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("label", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e86504f0b3b849e69652586e93a9cbf1", async() => {
                     BeginContext(169, 6, true);
                     WriteLiteral("Title:");
                     EndContext();
@@ -89,7 +89,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper.For = ModelExpressionProvid
                 WriteLiteral("<br>\r\n            ");
                 EndContext();
                 BeginContext(201, 77, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "d865c4c99d83437baa8c25ee22f19e88", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "a99a74cd9a1c40f2a1e0c7a6234957fd", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();

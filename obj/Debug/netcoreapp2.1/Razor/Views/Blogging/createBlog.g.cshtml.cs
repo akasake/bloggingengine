@@ -62,12 +62,12 @@ using BloggingEngine.Models;
             WriteLiteral("\r\n<h2>Create blogpost</h2>\r\n\r\n");
             EndContext();
             BeginContext(78, 797, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4781bc2181864b7eaa5803b0bcf30ed0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2411e974aabc4d10a311bf4ea283cc1b", async() => {
                 BeginContext(148, 51, true);
                 WriteLiteral("\r\n        <fieldset>\r\n          <div>\r\n            ");
                 EndContext();
                 BeginContext(199, 48, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("label", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1af0e2d54aea489d9f4f984fd4c81c42", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("label", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "75fd8689d2354cd5886c706b5e4c716a", async() => {
                     BeginContext(233, 6, true);
                     WriteLiteral("Title:");
                     EndContext();
@@ -93,7 +93,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper.For = ModelExpressionProvid
                 WriteLiteral("<br>\r\n            ");
                 EndContext();
                 BeginContext(265, 36, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "44cc140efc8643daa8c64d61c99988f3", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "016520dd86ab47a08edf266b46f95a15", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
@@ -116,7 +116,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
                 WriteLiteral("\r\n          </div>\r\n          <div>\r\n            ");
                 EndContext();
                 BeginContext(350, 53, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("label", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "13e35f427db84b6f92b2688185d51681", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("label", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0a57f54c89624b0cb8d4b57afce10e12", async() => {
                     BeginContext(388, 7, true);
                     WriteLiteral("Author:");
                     EndContext();
@@ -142,7 +142,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper.For = ModelExpressionProvid
                 WriteLiteral("<br>\r\n            ");
                 EndContext();
                 BeginContext(421, 238, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("select", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9bfef5cc94fc4626bd477192eabc0be4", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("select", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "48b492c9a6974ceeac432d1031095204", async() => {
                     BeginContext(481, 2, true);
                     WriteLiteral("\r\n");
                     EndContext();
@@ -155,7 +155,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper.For = ModelExpressionProvid
                     WriteLiteral("              ");
                     EndContext();
                     BeginContext(551, 70, false);
-                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "946901a2889e4f61921e7541af4ee0bf", async() => {
+                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a101503deee343fa8dd5bfe163f844f8", async() => {
                         BeginContext(579, 16, false);
 #line 15 "D:\OneDrive - Thomas More\school 2019\ASP.NET\BloggingEngine\Views\Blogging\createBlog.cshtml"
                                     Write(person.FirstName);
