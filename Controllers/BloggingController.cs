@@ -122,7 +122,8 @@ namespace BloggingEngine.Controllers
         [HttpPost]
         public IActionResult EditPost([FromRoute]int Id, Post post)
         {
-            var toUpdatepost = _bloggingContext.Posts.Find(Id);
+            var toUpdatepost = _bloggingContext.Posts.Find(post.Id);
+            toUpdatepost.Id = post.Id;
             toUpdatepost.Title = post.Title;
             toUpdatepost.Content = post.Content;
             toUpdatepost.BlogId = post.BlogId;
