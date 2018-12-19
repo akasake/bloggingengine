@@ -5903,7 +5903,7 @@
       ]
     },
     "Microsoft.EntityFrameworkCore.InMemory/2.1.4": {
-      "sha512": "VFyAQ9qnlVV2Y9vZ8Wk4p659jKZHgvy/Qdo/kwQXnZGzSwdj1eFTD02h9e4+79SrhTGqBxPQRpMVlfdLe2BD6A==",
+      "sha512": "BXubcRA47L7xflN0IDYwT/TIfuI8iD2YscoMOqakYPCDmBfUTrfL3v6SSpK5CLRjJ0KRaqygPPGa4mxPndLPbQ==",
       "type": "package",
       "path": "microsoft.entityframeworkcore.inmemory/2.1.4",
       "files": [
@@ -11936,23 +11936,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pham_\\.nuget\\packages\\": {},
+    "C:\\Users\\Sander\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\OneDrive - Thomas More\\school 2019\\ASP.NET\\bloggingengine\\BloggingEngine.csproj",
+      "projectUniqueName": "d:\\school\\dotnet\\blog\\bloggingengine\\BloggingEngine.csproj",
       "projectName": "BloggingEngine",
-      "projectPath": "D:\\OneDrive - Thomas More\\school 2019\\ASP.NET\\bloggingengine\\BloggingEngine.csproj",
-      "packagesPath": "C:\\Users\\pham_\\.nuget\\packages\\",
-      "outputPath": "D:\\OneDrive - Thomas More\\school 2019\\ASP.NET\\bloggingengine\\obj\\",
+      "projectPath": "d:\\school\\dotnet\\blog\\bloggingengine\\BloggingEngine.csproj",
+      "packagesPath": "C:\\Users\\Sander\\.nuget\\packages\\",
+      "outputPath": "d:\\school\\dotnet\\blog\\bloggingengine\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\pham_\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Sander\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
