@@ -80,12 +80,12 @@ Write(Model.Content);
             WriteLiteral("</p>\r\n\r\n");
             EndContext();
             BeginContext(140, 286, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4757339e585b40828de8ff74f21136ab", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ed68298150d84a50b4feaea92e8aae69", async() => {
                 BeginContext(196, 38, true);
                 WriteLiteral("\r\n    <div class=\"form-group\">\r\n      ");
                 EndContext();
                 BeginContext(234, 96, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2caa373678ae4d36a74cd5cc05eb5465", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7979dafd09674ffc85d67fdeaddf5e59", async() => {
                     BeginContext(320, 6, true);
                     WriteLiteral("Cancel");
                     EndContext();

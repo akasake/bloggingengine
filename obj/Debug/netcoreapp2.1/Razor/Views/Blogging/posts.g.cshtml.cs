@@ -92,7 +92,7 @@ using BloggingEngine.Models;
             WriteLiteral("</p>\r\n\r\n ");
             EndContext();
             BeginContext(167, 135, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c6029faba8e74e1fa4dea992f5e4a2b6", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "64e49b3b21b844358c416bead39ba745", async() => {
                 BeginContext(287, 11, true);
                 WriteLiteral("Create Post");
                 EndContext();
@@ -160,7 +160,7 @@ using BloggingEngine.Models;
             WriteLiteral("</p>\r\n        ");
             EndContext();
             BeginContext(414, 125, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6aec31e4518c4c9692ba142703846ae0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "83cc4cfef5714627935be4f7b830ee6a", async() => {
                 BeginContext(529, 6, true);
                 WriteLiteral("Detail");
                 EndContext();
@@ -199,7 +199,7 @@ using BloggingEngine.Models;
             WriteLiteral("\r\n        ");
             EndContext();
             BeginContext(549, 121, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1d8f7af37a9045a78483aab9623163ae", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "151cd57cd9d1475da12b4251539ca238", async() => {
                 BeginContext(662, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -238,7 +238,7 @@ using BloggingEngine.Models;
             WriteLiteral("\r\n        ");
             EndContext();
             BeginContext(680, 124, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b4e0c1df4c05457885a20abb8a984e2b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bb2c968d71c942aba92c630cee40a92c", async() => {
                 BeginContext(794, 6, true);
                 WriteLiteral("Delete");
                 EndContext();

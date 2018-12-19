@@ -11,6 +11,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using BloggingEngine.DataAccess; // namespace oproepen
+using CSharp_Pline;
 
 namespace BloggingEngine
 {
@@ -56,6 +57,7 @@ namespace BloggingEngine
             }
 
             //app.UseHttpsRedirection();
+            app.UsePokeMiddleware();
             app.UseStaticFiles();
             app.UseCookiePolicy();
 

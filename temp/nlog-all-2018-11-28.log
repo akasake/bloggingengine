@@ -1,0 +1,242 @@
+2018-11-28 17:00:07.3012||DEBUG|BloggingEngine.Program|init main 
+2018-11-28 17:00:07.6493||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\pham_\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2018-11-28 17:01:10.0512|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/blogging   
+2018-11-28 17:01:10.5963|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Blogging"}. Executing action BloggingEngine.Controllers.BloggingController.Index (BloggingEngine) 
+2018-11-28 17:01:11.1804|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method BloggingEngine.Controllers.BloggingController.Index (BloggingEngine) - Validation state: Valid 
+2018-11-28 17:01:11.1872||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello 
+2018-11-28 17:01:13.1470|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.4-rtm-31024 initialized 'BloggingContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None 
+2018-11-28 17:01:14.0347|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (28ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-11-28 17:01:14.0856|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "b"."Id", "b"."AuthorId", "b"."Name", "b.Author"."Id", "b.Author"."FirstName", "b.Author"."LastName"
+FROM "Blogs" AS "b"
+INNER JOIN "People" AS "b.Author" ON "b"."AuthorId" = "b.Author"."Id" 
+2018-11-28 17:01:14.4375|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method BloggingEngine.Controllers.BloggingController.Index (BloggingEngine), returned result Microsoft.AspNetCore.Mvc.ViewResult in 3249.7996ms. 
+2018-11-28 17:01:14.4787|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2018-11-28 17:01:14.7743|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 316.6286ms. 
+2018-11-28 17:01:14.7743|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action BloggingEngine.Controllers.BloggingController.Index (BloggingEngine) in 4179.136ms 
+2018-11-28 17:01:14.8095|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4762.2071ms 200 text/html; charset=utf-8 
+2018-11-28 17:01:14.8687|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/lib/jquery/dist/jquery.js   
+2018-11-28 17:01:14.8687|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/dist/css/bootstrap.css   
+2018-11-28 17:01:14.8687|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/css/site.css   
+2018-11-28 17:01:14.8687|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/dist/js/bootstrap.js   
+2018-11-28 17:01:14.9002|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0   
+2018-11-28 17:01:15.0116|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/css/site.css'. Physical path: 'D:\OneDrive - Thomas More\school 2019\ASP.NET\bloggingengine\wwwroot\css\site.css' 
+2018-11-28 17:01:15.0652|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 204.725ms 200 text/css 
+2018-11-28 17:01:15.0652|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/js/site.js'. Physical path: 'D:\OneDrive - Thomas More\school 2019\ASP.NET\bloggingengine\wwwroot\js\site.js' 
+2018-11-28 17:01:15.1020|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css'. Physical path: 'D:\OneDrive - Thomas More\school 2019\ASP.NET\bloggingengine\wwwroot\lib\bootstrap\dist\css\bootstrap.css' 
+2018-11-28 17:01:15.1164|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 245.8959ms 200 text/css 
+2018-11-28 17:01:15.1164|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 216.1494ms 200 application/javascript 
+2018-11-28 17:01:15.2488|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/lib/jquery/dist/jquery.js'. Physical path: 'D:\OneDrive - Thomas More\school 2019\ASP.NET\bloggingengine\wwwroot\lib\jquery\dist\jquery.js' 
+2018-11-28 17:01:15.2505|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js'. Physical path: 'D:\OneDrive - Thomas More\school 2019\ASP.NET\bloggingengine\wwwroot\lib\bootstrap\dist\js\bootstrap.js' 
+2018-11-28 17:01:15.2505|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 387.3854ms 200 application/javascript 
+2018-11-28 17:01:15.2505|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 389.0146ms 200 application/javascript 
+2018-11-28 17:01:15.8631|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/dist/css/bootstrap.css.map   
+2018-11-28 17:01:15.8785|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css.map'. Physical path: 'D:\OneDrive - Thomas More\school 2019\ASP.NET\bloggingengine\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map' 
+2018-11-28 17:01:15.8915|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 28.384ms 200 text/plain 
+2018-11-28 17:20:18.4216||DEBUG|BloggingEngine.Program|init main 
+2018-11-28 17:20:19.5927||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\pham_\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2018-11-28 17:20:20.3793|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/blogging   
+2018-11-28 17:20:20.7211|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Blogging"}. Executing action BloggingEngine.Controllers.BloggingController.Index (BloggingEngine) 
+2018-11-28 17:20:21.0897|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method BloggingEngine.Controllers.BloggingController.Index (BloggingEngine) - Validation state: Valid 
+2018-11-28 17:20:21.0953||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello 
+2018-11-28 17:20:24.2879|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.4-rtm-31024 initialized 'BloggingContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None 
+2018-11-28 17:20:25.3433|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (26ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-11-28 17:20:25.4037|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "b"."Id", "b"."AuthorId", "b"."Name", "b.Author"."Id", "b.Author"."FirstName", "b.Author"."LastName"
+FROM "Blogs" AS "b"
+INNER JOIN "People" AS "b.Author" ON "b"."AuthorId" = "b.Author"."Id" 
+2018-11-28 17:20:25.8776|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method BloggingEngine.Controllers.BloggingController.Index (BloggingEngine), returned result Microsoft.AspNetCore.Mvc.ViewResult in 4781.8081ms. 
+2018-11-28 17:20:25.9136|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2018-11-28 17:20:26.1289|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 233.4448ms. 
+2018-11-28 17:20:26.1289|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action BloggingEngine.Controllers.BloggingController.Index (BloggingEngine) in 5410.0043ms 
+2018-11-28 17:20:26.1630|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 5784.9172ms 200 text/html; charset=utf-8 
+2018-11-28 17:20:29.3969|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/blogging   
+2018-11-28 17:20:29.3969|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Blogging"}. Executing action BloggingEngine.Controllers.BloggingController.Index (BloggingEngine) 
+2018-11-28 17:20:29.3969|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method BloggingEngine.Controllers.BloggingController.Index (BloggingEngine) - Validation state: Valid 
+2018-11-28 17:20:29.4155||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello 
+2018-11-28 17:20:29.4287|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.4-rtm-31024 initialized 'BloggingContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None 
+2018-11-28 17:20:29.4615|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-11-28 17:20:29.4833|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "b"."Id", "b"."AuthorId", "b"."Name", "b.Author"."Id", "b.Author"."FirstName", "b.Author"."LastName"
+FROM "Blogs" AS "b"
+INNER JOIN "People" AS "b.Author" ON "b"."AuthorId" = "b.Author"."Id" 
+2018-11-28 17:20:29.4871|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method BloggingEngine.Controllers.BloggingController.Index (BloggingEngine), returned result Microsoft.AspNetCore.Mvc.ViewResult in 71.4631ms. 
+2018-11-28 17:20:29.4871|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2018-11-28 17:20:29.5026|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 11.9944ms. 
+2018-11-28 17:20:29.5026|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action BloggingEngine.Controllers.BloggingController.Index (BloggingEngine) in 99.535ms 
+2018-11-28 17:20:29.5413|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 144.4259ms 200 text/html; charset=utf-8 
+2018-11-28 17:20:31.6770|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/blogging/author/create   
+2018-11-28 17:20:31.7405|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "CreateAuthor", controller = "Blogging"}. Executing action BloggingEngine.Controllers.BloggingController.CreateAuthor (BloggingEngine) 
+2018-11-28 17:20:31.7405|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method BloggingEngine.Controllers.BloggingController.CreateAuthor (BloggingEngine) - Validation state: Valid 
+2018-11-28 17:20:31.7589|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method BloggingEngine.Controllers.BloggingController.CreateAuthor (BloggingEngine), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.9623ms. 
+2018-11-28 17:20:31.7883|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view CreateAuthor. 
+2018-11-28 17:20:31.9506|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view CreateAuthor executed in 184.271ms. 
+2018-11-28 17:20:31.9543|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action BloggingEngine.Controllers.BloggingController.CreateAuthor (BloggingEngine) in 206.773ms 
+2018-11-28 17:20:31.9543|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 280.7953ms 200 text/html; charset=utf-8 
+2018-11-28 17:22:41.7385|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/dist/css/bootstrap.css.map   
+2018-11-28 17:22:41.8837|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css.map'. Physical path: 'D:\OneDrive - Thomas More\school 2019\ASP.NET\bloggingengine\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map' 
+2018-11-28 17:22:41.9011|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 162.5608ms 200 text/plain 
+2018-11-28 17:35:49.9425||DEBUG|BloggingEngine.Program|init main 
+2018-11-28 17:35:51.0203||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\pham_\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2018-11-28 17:36:04.6449|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/blogging   
+2018-11-28 17:36:05.0552|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Blogging"}. Executing action BloggingEngine.Controllers.BloggingController.Index (BloggingEngine) 
+2018-11-28 17:36:05.5163|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method BloggingEngine.Controllers.BloggingController.Index (BloggingEngine) - Validation state: Valid 
+2018-11-28 17:36:05.5163||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello 
+2018-11-28 17:36:08.5660|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.4-rtm-31024 initialized 'BloggingContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None 
+2018-11-28 17:36:09.8853|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (27ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-11-28 17:36:09.9415|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "b"."Id", "b"."AuthorId", "b"."Name", "b.Author"."Id", "b.Author"."FirstName", "b.Author"."LastName"
+FROM "Blogs" AS "b"
+INNER JOIN "People" AS "b.Author" ON "b"."AuthorId" = "b.Author"."Id" 
+2018-11-28 17:36:10.3442|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method BloggingEngine.Controllers.BloggingController.Index (BloggingEngine), returned result Microsoft.AspNetCore.Mvc.ViewResult in 4814.6081ms. 
+2018-11-28 17:36:10.3999|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2018-11-28 17:36:10.8493|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 475.08ms. 
+2018-11-28 17:36:10.8619|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action BloggingEngine.Controllers.BloggingController.Index (BloggingEngine) in 5803.5139ms 
+2018-11-28 17:36:10.9668|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 6322.4183ms 200 text/html; charset=utf-8 
+2018-11-28 17:36:14.0147|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/blogging/author/create   
+2018-11-28 17:36:14.0503|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "CreateAuthor", controller = "Blogging"}. Executing action BloggingEngine.Controllers.BloggingController.CreateAuthor (BloggingEngine) 
+2018-11-28 17:36:14.0651||INFO|CSharp_Pline.Controllers.PokeActionFilter|BloggingController - BloggingEngine.Controllers.BloggingController.CreateAuthor (BloggingEngine) 
+2018-11-28 17:36:14.0651|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method BloggingEngine.Controllers.BloggingController.CreateAuthor (BloggingEngine) - Validation state: Valid 
+2018-11-28 17:36:14.0815|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method BloggingEngine.Controllers.BloggingController.CreateAuthor (BloggingEngine), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.0113ms. 
+2018-11-28 17:36:14.0815||INFO|CSharp_Pline.Controllers.PokeActionFilter|BloggingController - BloggingEngine.Controllers.BloggingController.CreateAuthor (BloggingEngine) 
+2018-11-28 17:36:14.1194|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view CreateAuthor. 
+2018-11-28 17:36:14.2898|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view CreateAuthor executed in 181.0256ms. 
+2018-11-28 17:36:14.2898|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action BloggingEngine.Controllers.BloggingController.CreateAuthor (BloggingEngine) in 242.1053ms 
+2018-11-28 17:36:14.3020|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 287.3016ms 200 text/html; charset=utf-8 
+2018-11-28 17:38:06.8605|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/blogging   
+2018-11-28 17:38:06.8605|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Blogging"}. Executing action BloggingEngine.Controllers.BloggingController.Index (BloggingEngine) 
+2018-11-28 17:38:06.8785|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method BloggingEngine.Controllers.BloggingController.Index (BloggingEngine) - Validation state: Valid 
+2018-11-28 17:38:06.8935||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello 
+2018-11-28 17:38:06.9076|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.4-rtm-31024 initialized 'BloggingContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None 
+2018-11-28 17:38:06.9320|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-11-28 17:38:06.9405|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "b"."Id", "b"."AuthorId", "b"."Name", "b.Author"."Id", "b.Author"."FirstName", "b.Author"."LastName"
+FROM "Blogs" AS "b"
+INNER JOIN "People" AS "b.Author" ON "b"."AuthorId" = "b.Author"."Id" 
+2018-11-28 17:38:06.9405|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method BloggingEngine.Controllers.BloggingController.Index (BloggingEngine), returned result Microsoft.AspNetCore.Mvc.ViewResult in 50.5596ms. 
+2018-11-28 17:38:06.9405|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2018-11-28 17:38:06.9405|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 5.0236ms. 
+2018-11-28 17:38:06.9527|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action BloggingEngine.Controllers.BloggingController.Index (BloggingEngine) in 74.5983ms 
+2018-11-28 17:38:06.9527|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 100.6831ms 200 text/html; charset=utf-8 
+2018-11-28 17:38:14.9379|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/blogging/author/create   
+2018-11-28 17:38:14.9379|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "CreateAuthor", controller = "Blogging"}. Executing action BloggingEngine.Controllers.BloggingController.CreateAuthor (BloggingEngine) 
+2018-11-28 17:38:14.9556||INFO|CSharp_Pline.Controllers.PokeActionFilter|BloggingController - BloggingEngine.Controllers.BloggingController.CreateAuthor (BloggingEngine) 
+2018-11-28 17:38:14.9710|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method BloggingEngine.Controllers.BloggingController.CreateAuthor (BloggingEngine) - Validation state: Valid 
+2018-11-28 17:38:14.9710|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method BloggingEngine.Controllers.BloggingController.CreateAuthor (BloggingEngine), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0679ms. 
+2018-11-28 17:38:15.0406||INFO|CSharp_Pline.Controllers.PokeActionFilter|BloggingController - BloggingEngine.Controllers.BloggingController.CreateAuthor (BloggingEngine) 
+2018-11-28 17:38:15.0406|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view CreateAuthor. 
+2018-11-28 17:38:15.0542|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view CreateAuthor executed in 10.3063ms. 
+2018-11-28 17:38:15.0542|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action BloggingEngine.Controllers.BloggingController.CreateAuthor (BloggingEngine) in 103.1399ms 
+2018-11-28 17:38:15.0649|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 127.0392ms 200 text/html; charset=utf-8 
+2018-11-28 17:38:37.4890||DEBUG|BloggingEngine.Program|init main 
+2018-11-28 17:38:38.7362||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\pham_\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2018-11-28 17:38:42.3825|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/blogging   
+2018-11-28 17:38:42.9838|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Blogging"}. Executing action BloggingEngine.Controllers.BloggingController.Index (BloggingEngine) 
+2018-11-28 17:38:43.3861|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method BloggingEngine.Controllers.BloggingController.Index (BloggingEngine) - Validation state: Valid 
+2018-11-28 17:38:43.3918||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello 
+2018-11-28 17:38:45.5111|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.4-rtm-31024 initialized 'BloggingContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None 
+2018-11-28 17:38:47.3033|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (52ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-11-28 17:38:47.4391|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "b"."Id", "b"."AuthorId", "b"."Name", "b.Author"."Id", "b.Author"."FirstName", "b.Author"."LastName"
+FROM "Blogs" AS "b"
+INNER JOIN "People" AS "b.Author" ON "b"."AuthorId" = "b.Author"."Id" 
+2018-11-28 17:38:47.9187|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method BloggingEngine.Controllers.BloggingController.Index (BloggingEngine), returned result Microsoft.AspNetCore.Mvc.ViewResult in 4519.1915ms. 
+2018-11-28 17:38:47.9964|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2018-11-28 17:38:48.4987|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 545.6428ms. 
+2018-11-28 17:38:48.5100|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action BloggingEngine.Controllers.BloggingController.Index (BloggingEngine) in 5523.0927ms 
+2018-11-28 17:38:48.7181|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 6336.3304ms 200 text/html; charset=utf-8 
+2018-11-28 17:38:52.5039|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/blogging/author/create   
+2018-11-28 17:38:52.5524|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "CreateAuthor", controller = "Blogging"}. Executing action BloggingEngine.Controllers.BloggingController.CreateAuthor (BloggingEngine) 
+2018-11-28 17:38:52.5666||INFO|CSharp_Pline.Controllers.PokeActionFilter|BloggingController - BloggingEngine.Controllers.BloggingController.CreateAuthor (BloggingEngine) 
+2018-11-28 17:38:52.5789|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method BloggingEngine.Controllers.BloggingController.CreateAuthor (BloggingEngine) - Validation state: Valid 
+2018-11-28 17:38:52.5789|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method BloggingEngine.Controllers.BloggingController.CreateAuthor (BloggingEngine), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.8679ms. 
+2018-11-28 17:38:52.6306|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view CreateAuthor. 
+2018-11-28 17:38:52.8346|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view CreateAuthor executed in 222.7046ms. 
+2018-11-28 17:38:52.8446|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action BloggingEngine.Controllers.BloggingController.CreateAuthor (BloggingEngine) in 287.9894ms 
+2018-11-28 17:38:52.8446|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 343.6339ms 200 text/html; charset=utf-8 
+2018-11-28 17:46:23.1194||DEBUG|BloggingEngine.Program|init main 
+2018-11-28 17:46:24.1469||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\pham_\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2018-11-28 17:46:31.0896|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/blogging/author/create   
+2018-11-28 17:46:31.5357|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "CreateAuthor", controller = "Blogging"}. Executing action BloggingEngine.Controllers.BloggingController.CreateAuthor (BloggingEngine) 
+2018-11-28 17:46:31.9885||INFO|CSharp_Pline.Controllers.PokeActionFilter|BloggingController - BloggingEngine.Controllers.BloggingController.CreateAuthor (BloggingEngine) 
+2018-11-28 17:46:32.0109|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method BloggingEngine.Controllers.BloggingController.CreateAuthor (BloggingEngine) - Validation state: Valid 
+2018-11-28 17:46:32.0230|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method BloggingEngine.Controllers.BloggingController.CreateAuthor (BloggingEngine), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.9772ms. 
+2018-11-28 17:46:32.1247|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view CreateAuthor. 
+2018-11-28 17:46:32.5534|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view CreateAuthor executed in 484.4612ms. 
+2018-11-28 17:46:32.5534|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action BloggingEngine.Controllers.BloggingController.CreateAuthor (BloggingEngine) in 1020.9686ms 
+2018-11-28 17:46:32.6714|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1582.4839ms 200 text/html; charset=utf-8 
+2018-11-28 17:47:31.0822||DEBUG|BloggingEngine.Program|init main 
+2018-11-28 17:47:32.1230||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\pham_\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2018-11-28 17:49:52.3225|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/blogging/author/create   
+2018-11-28 17:49:52.7836|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "CreateAuthor", controller = "Blogging"}. Executing action BloggingEngine.Controllers.BloggingController.CreateAuthor (BloggingEngine) 
+2018-11-28 17:49:53.2626||INFO|CSharp_Pline.Controllers.PokeActionFilter|BloggingController - BloggingEngine.Controllers.BloggingController.CreateAuthor (BloggingEngine) 
+2018-11-28 17:49:53.2945|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method BloggingEngine.Controllers.BloggingController.CreateAuthor (BloggingEngine) - Validation state: Valid 
+2018-11-28 17:49:53.3187|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method BloggingEngine.Controllers.BloggingController.CreateAuthor (BloggingEngine), returned result Microsoft.AspNetCore.Mvc.ViewResult in 13.0682ms. 
+2018-11-28 17:49:53.4587|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view CreateAuthor. 
+2018-11-28 17:49:53.9359|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view CreateAuthor executed in 558.4278ms. 
+2018-11-28 17:49:53.9391|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action BloggingEngine.Controllers.BloggingController.CreateAuthor (BloggingEngine) in 1152.2868ms 
+2018-11-28 17:49:54.0083|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1686.3911ms 200 text/html; charset=utf-8 
+2018-11-28 17:51:35.8756||DEBUG|BloggingEngine.Program|init main 
+2018-11-28 17:51:36.2384||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\pham_\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2018-11-28 17:51:54.0631||DEBUG|BloggingEngine.Program|init main 
+2018-11-28 17:51:54.9653||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\pham_\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2018-11-28 17:53:22.6845||DEBUG|BloggingEngine.Program|init main 
+2018-11-28 17:53:23.5992||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\pham_\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2018-11-28 17:53:25.1967|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/blogging   
+2018-11-28 17:53:25.6366|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Blogging"}. Executing action BloggingEngine.Controllers.BloggingController.Index (BloggingEngine) 
+2018-11-28 17:53:26.0796||INFO|CSharp_Pline.Controllers.PokeActionFilter|BloggingController - BloggingEngine.Controllers.BloggingController.Index (BloggingEngine) 
+2018-11-28 17:53:26.1027|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method BloggingEngine.Controllers.BloggingController.Index (BloggingEngine) - Validation state: Valid 
+2018-11-28 17:53:26.1194||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello 
+2018-11-28 17:53:28.5320|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.4-rtm-31024 initialized 'BloggingContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None 
+2018-11-28 17:53:30.2819|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (174ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-11-28 17:53:30.5855|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "b"."Id", "b"."AuthorId", "b"."Name", "b.Author"."Id", "b.Author"."FirstName", "b.Author"."LastName"
+FROM "Blogs" AS "b"
+INNER JOIN "People" AS "b.Author" ON "b"."AuthorId" = "b.Author"."Id" 
+2018-11-28 17:53:31.7294|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method BloggingEngine.Controllers.BloggingController.Index (BloggingEngine), returned result Microsoft.AspNetCore.Mvc.ViewResult in 5606.8047ms. 
+2018-11-28 17:53:31.8261|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2018-11-28 17:53:32.3621|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 584.9732ms. 
+2018-11-28 17:53:32.3621|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action BloggingEngine.Controllers.BloggingController.Index (BloggingEngine) in 6728.0808ms 
+2018-11-28 17:53:32.4369|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 7242.3874ms 200 text/html; charset=utf-8 
+2018-11-28 17:54:37.7415||DEBUG|BloggingEngine.Program|init main 
+2018-11-28 17:54:38.6890||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\pham_\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2018-11-28 17:54:53.9952|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/blogging/blog/1   
+2018-11-28 17:54:54.4083|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Posts", controller = "Blogging"}. Executing action BloggingEngine.Controllers.BloggingController.Posts (BloggingEngine) 
+2018-11-28 17:54:54.8273||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/blog/1 
+2018-11-28 17:54:54.8529|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method BloggingEngine.Controllers.BloggingController.Posts (BloggingEngine) with arguments (1) - Validation state: Valid 
+2018-11-28 17:54:57.0103|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.4-rtm-31024 initialized 'BloggingContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None 
+2018-11-28 17:54:58.4054|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (76ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-11-28 17:54:58.5842|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (31ms) [Parameters=[@__Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "_bloggingContext"."Id", "_bloggingContext"."BlogId", "_bloggingContext"."Content", "_bloggingContext"."Title"
+FROM "Posts" AS "_bloggingContext"
+WHERE "_bloggingContext"."BlogId" = @__Id_0 
+2018-11-28 17:54:59.2307|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-11-28 17:54:59.2435|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."AuthorId", "e"."Name"
+FROM "Blogs" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 
+2018-11-28 17:54:59.5415|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-11-28 17:54:59.5528|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."FirstName", "e"."LastName"
+FROM "People" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 
+2018-11-28 17:54:59.6010|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method BloggingEngine.Controllers.BloggingController.Posts (BloggingEngine), returned result Microsoft.AspNetCore.Mvc.ViewResult in 4734.2521ms. 
+2018-11-28 17:54:59.6010||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/blog/1 
+2018-11-28 17:54:59.7410|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Posts. 
+2018-11-28 17:55:00.3382|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Posts executed in 679.7067ms. 
+2018-11-28 17:55:00.3382|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action BloggingEngine.Controllers.BloggingController.Posts (BloggingEngine) in 5930.0199ms 
+2018-11-28 17:55:00.3809|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 6386.5119ms 200 text/html; charset=utf-8 
+2018-11-28 20:55:35.0835||DEBUG|BloggingEngine.Program|init main 
+2018-11-28 20:55:35.4264||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\pham_\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 

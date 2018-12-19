@@ -5,44 +5,75 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using BloggingEngine.DataAccess;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using CSharp_Pline.Controllers;
 
 namespace BloggingEngine.Controllers
 {
     public class BloggingController : Controller
     {
         private BloggingContext _bloggingContext;
+        private readonly ILogger<BloggingController> _logger;
 
-        public BloggingController(BloggingContext bloggingContext)
+        public BloggingController(BloggingContext bloggingContext, ILogger<BloggingController> logger)
         {
             _bloggingContext = bloggingContext;
+            _logger = logger;
         }
 
         // see list of blogs
         [Route("blogging")]
+        [PokeActionFilter]
          public IActionResult Index()
-        { 
-            var allBlogs = _bloggingContext.Blogs.ToList();
-            foreach(BlogModel blog in allBlogs){
-                var author = _bloggingContext.People.Find(blog.AuthorId);
-                blog.Author= author;
-            }
+        {
+            _logger.LogInformation("Index page says hello");
+            var allBlogs = _bloggingContext.Blogs.Include(b => b.Author).ToList();
             var blogList = new BlogList(); 
             blogList.Blogs = allBlogs;
             return View(blogList);
         }
 
+        //create new Author
+        [PokeActionFilter]
+        [Route("blogging/author/create")]
+        [HttpGet()]
+        public IActionResult CreateAuthor(){
+            var emptyPerson = new PersonModel();
+            return View(emptyPerson);
+        }
+
+        //save new Author
+        [Route("blogging/author/create")]
+        [PokeActionFilter]
+        [HttpPost()]
+        public IActionResult CreateAuthor(PersonModel person){
+            var newPerson = new BloggingEngine.DataAccess.PersonModel(){
+                FirstName = person.FirstName,
+                LastName = person.LastName,
+            };
+            _bloggingContext.People.Add(newPerson);
+            _bloggingContext.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
         // edit blog show
-        [Route("blogging/edit/blog{id}")]
+        [Route("blogging/edit/blog/{id}")]
+        [PokeActionFilter]
         [HttpGet()]
         public IActionResult EditBlog([FromRoute] int Id)
         { 
             var blog = _bloggingContext.Blogs.Find(Id);
+            if(blog == null){
+                return RedirectToAction("Index");
+            };
             return View(blog);
         }
 
         // saving edited blog
-        [Route("blogging/edit/blog{id}")]
+        [Route("blogging/edit/blog/{id}")]
         [HttpPost()]
+        [PokeActionFilter]
         public IActionResult EditBlog([FromRoute] int Id, BlogModel afterBlog)
         { 
             var toUpdateBlog = _bloggingContext.Blogs.Find(Id);
@@ -56,6 +87,7 @@ namespace BloggingEngine.Controllers
         //create new blog
         [Route("blogging/create")]
         [HttpGet()]
+        [PokeActionFilter]
         public IActionResult CreateBlog(){
             var emptyBlog = new BlogModel();
             var people = _bloggingContext.People.ToList();
@@ -69,6 +101,7 @@ namespace BloggingEngine.Controllers
         //save new blog
         [Route("blogging/create")]
         [HttpPost()]
+        [PokeActionFilter]
         public IActionResult CreateBlog(BlogModel blog){
             var newBlog = new BloggingEngine.DataAccess.BlogModel(){
                 AuthorId = blog.AuthorId,
@@ -81,8 +114,9 @@ namespace BloggingEngine.Controllers
         
 
         // see all post from one blog by id 
-        [Route("blogging/blog{id}")]
+        [Route("blogging/blog/{id}")]
         [HttpGet]
+        [PokeActionFilter]
         public IActionResult Posts([FromRoute]int Id)
         {
             //get posts of blog
@@ -90,6 +124,9 @@ namespace BloggingEngine.Controllers
             // get blog
              var blog = _bloggingContext.Blogs.Find(Id);
              //get author of blog
+             if(blog == null){
+                return RedirectToAction("Index");
+            };
              var author = _bloggingContext.People.Find(blog.AuthorId);
             // build author model
             var authorModel = new PersonModel() {
@@ -108,18 +145,23 @@ namespace BloggingEngine.Controllers
             return View(posts); 
         }
         //edit post
-        [Route("blogging/edit/post{id}")]
+        [Route("blogging/edit/post/{id}")]
         [HttpGet]
+        [PokeActionFilter]
         public IActionResult EditPost([FromRoute]int Id)
         {
             var post = _bloggingContext.Posts.Find(Id);
+            if(post == null){
+                return RedirectToAction("Index");
+            };
 
             return View(post);
         }
 
         // save edit post
-        [Route("blogging/edit/post{id}")]
+        [Route("blogging/edit/post/{id}")]
         [HttpPost]
+        [PokeActionFilter]
         public IActionResult EditPost([FromRoute]int Id, Post post)
         {
             var toUpdatepost = _bloggingContext.Posts.Find(post.Id);
@@ -135,8 +177,9 @@ namespace BloggingEngine.Controllers
 
 
         //create new post
-        [Route("blogging/create/blog{id}/post")]
+        [Route("blogging/create/blog/{id}/post")]
         [HttpGet()]
+        [PokeActionFilter]
         public IActionResult CreatePost([FromRoute]int Id){
             var emptyPost = new Post();
             emptyPost.BlogId = Id;
@@ -144,8 +187,9 @@ namespace BloggingEngine.Controllers
         }
 
         //save new post
-        [Route("blogging/create/blog{id}/post")]
+        [Route("blogging/create/blog/{id}/post")]
         [HttpPost()]
+        [PokeActionFilter]
         public IActionResult CreateBlog(Post post){
             var newPost = new BloggingEngine.DataAccess.Post(){
                 Title = post.Title,
@@ -154,20 +198,21 @@ namespace BloggingEngine.Controllers
             };
             _bloggingContext.Posts.Add(newPost);
             _bloggingContext.SaveChanges();
-            return RedirectToAction("Posts");
+            return RedirectToAction("Index");
         }
 
         // show details of a Post
-        [Route("blogging/post{id}")]
+        [Route("blogging/post/{id}")]
         [HttpGet]
+        [PokeActionFilter]
         public IActionResult PostDetail([FromRoute]int Id)
         {
             var post = _bloggingContext.Posts.Find(Id);
-            var comments = _bloggingContext.Comments.Where(_bloggingContext => _bloggingContext.PostId == Id).ToList();
-            foreach(Comment comment in comments){
-                var author = _bloggingContext.People.Find(comment.AuthorId);
-                comment.Author= author;
-            }
+            if(post == null){
+                return RedirectToAction("Index");
+
+            };
+            var comments = _bloggingContext.Comments.Where(_bloggingContext => _bloggingContext.PostId == Id).Include(c => c.Author).ToList();
             post.Comments= comments;
             var people = _bloggingContext.People.ToList();
             var newcomment = new Comment();
@@ -181,8 +226,9 @@ namespace BloggingEngine.Controllers
         }
 
         // Add comment
-        [Route("blogging/post{id}")]
+        [Route("blogging/post/{id}")]
         [HttpPost]
+        [PokeActionFilter]
         public IActionResult Comment([FromRoute]int Id, PostWithComment item)
         {
             var newcomment = new BloggingEngine.DataAccess.Comment() {
@@ -197,17 +243,22 @@ namespace BloggingEngine.Controllers
         }
 
         // delete post page
-        [Route("blogging/post{id}/delete")]
+        [Route("blogging/post/{id}/delete")]
         [HttpGet]
+        [PokeActionFilter]
         public IActionResult DeletePost([FromRoute]int Id)
         {
             var post = _bloggingContext.Posts.Find(Id);
+            if(post == null){
+                return RedirectToAction("Posts");
+            };
             return View(post);
         }
 
         //actually deleting post
-        [Route("blogging/post{id}/delete")]
+        [Route("blogging/post/{id}/delete")]
         [HttpPost]
+        [PokeActionFilter]
         public IActionResult DeletePost([FromRoute]int Id, string confirmation)
         {
             var post = _bloggingContext.Posts.Find(Id);

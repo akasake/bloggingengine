@@ -78,3 +78,5 @@ D:\OneDrive - Thomas More\school 2019\ASP.NET\BloggingEngine\obj\Debug\netcoreap
 D:\OneDrive - Thomas More\school 2019\ASP.NET\BloggingEngine\obj\Debug\netcoreapp2.1\BloggingEngine.dll
 D:\OneDrive - Thomas More\school 2019\ASP.NET\BloggingEngine\obj\Debug\netcoreapp2.1\BloggingEngine.pdb
 D:\OneDrive - Thomas More\school 2019\ASP.NET\BloggingEngine\obj\Debug\netcoreapp2.1\BloggingEngine.csproj.CopyComplete
+D:\OneDrive - Thomas More\school 2019\ASP.NET\bloggingengine\obj\Debug\netcoreapp2.1\Razor\Views\Blogging\createAuthor.g.cshtml.cs
+D:\OneDrive - Thomas More\school 2019\ASP.NET\bloggingengine\bin\Debug\netcoreapp2.1\nlog.config

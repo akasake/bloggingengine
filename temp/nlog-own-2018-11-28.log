@@ -1,0 +1,28 @@
+2018-11-28 17:00:07.3012||DEBUG|BloggingEngine.Program|init main |url: |action: 
+2018-11-28 17:01:11.1872||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello |url: http://localhost/blogging|action: Index
+2018-11-28 17:20:18.4216||DEBUG|BloggingEngine.Program|init main |url: |action: 
+2018-11-28 17:20:21.0953||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello |url: http://localhost/blogging|action: Index
+2018-11-28 17:20:29.4155||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello |url: http://localhost/blogging|action: Index
+2018-11-28 17:35:49.9425||DEBUG|BloggingEngine.Program|init main |url: |action: 
+2018-11-28 17:36:05.5163||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello |url: http://localhost/blogging|action: Index
+2018-11-28 17:36:14.0651||INFO|CSharp_Pline.Controllers.PokeActionFilter|BloggingController - BloggingEngine.Controllers.BloggingController.CreateAuthor (BloggingEngine) |url: http://localhost/blogging/author/create|action: CreateAuthor
+2018-11-28 17:36:14.0815||INFO|CSharp_Pline.Controllers.PokeActionFilter|BloggingController - BloggingEngine.Controllers.BloggingController.CreateAuthor (BloggingEngine) |url: http://localhost/blogging/author/create|action: CreateAuthor
+2018-11-28 17:38:06.8935||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello |url: http://localhost/blogging|action: Index
+2018-11-28 17:38:14.9556||INFO|CSharp_Pline.Controllers.PokeActionFilter|BloggingController - BloggingEngine.Controllers.BloggingController.CreateAuthor (BloggingEngine) |url: http://localhost/blogging/author/create|action: CreateAuthor
+2018-11-28 17:38:15.0406||INFO|CSharp_Pline.Controllers.PokeActionFilter|BloggingController - BloggingEngine.Controllers.BloggingController.CreateAuthor (BloggingEngine) |url: http://localhost/blogging/author/create|action: CreateAuthor
+2018-11-28 17:38:37.4890||DEBUG|BloggingEngine.Program|init main |url: |action: 
+2018-11-28 17:38:43.3918||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello |url: http://localhost/blogging|action: Index
+2018-11-28 17:38:52.5666||INFO|CSharp_Pline.Controllers.PokeActionFilter|BloggingController - BloggingEngine.Controllers.BloggingController.CreateAuthor (BloggingEngine) |url: http://localhost/blogging/author/create|action: CreateAuthor
+2018-11-28 17:46:23.1194||DEBUG|BloggingEngine.Program|init main |url: |action: 
+2018-11-28 17:46:31.9885||INFO|CSharp_Pline.Controllers.PokeActionFilter|BloggingController - BloggingEngine.Controllers.BloggingController.CreateAuthor (BloggingEngine) |url: http://localhost/blogging/author/create|action: CreateAuthor
+2018-11-28 17:47:31.0822||DEBUG|BloggingEngine.Program|init main |url: |action: 
+2018-11-28 17:49:53.2626||INFO|CSharp_Pline.Controllers.PokeActionFilter|BloggingController - BloggingEngine.Controllers.BloggingController.CreateAuthor (BloggingEngine) |url: http://localhost/blogging/author/create|action: CreateAuthor
+2018-11-28 17:51:35.8756||DEBUG|BloggingEngine.Program|init main |url: |action: 
+2018-11-28 17:51:54.0631||DEBUG|BloggingEngine.Program|init main |url: |action: 
+2018-11-28 17:53:22.6845||DEBUG|BloggingEngine.Program|init main |url: |action: 
+2018-11-28 17:53:26.0796||INFO|CSharp_Pline.Controllers.PokeActionFilter|BloggingController - BloggingEngine.Controllers.BloggingController.Index (BloggingEngine) |url: http://localhost/blogging|action: Index
+2018-11-28 17:53:26.1194||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello |url: http://localhost/blogging|action: Index
+2018-11-28 17:54:37.7415||DEBUG|BloggingEngine.Program|init main |url: |action: 
+2018-11-28 17:54:54.8273||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/blog/1 |url: http://localhost/blogging/blog/1|action: Posts
+2018-11-28 17:54:59.6010||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/blog/1 |url: http://localhost/blogging/blog/1|action: Posts
+2018-11-28 20:55:35.0835||DEBUG|BloggingEngine.Program|init main |url: |action: 
