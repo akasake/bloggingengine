@@ -195,6 +195,7 @@ namespace BloggingEngine.Controllers
                 Title = post.Title,
                 Content = post.Content,
                 BlogId = post.BlogId,
+                Date = System.DateTime.Now.ToString("dd MMMM yyy"),
             };
             _bloggingContext.Posts.Add(newPost);
             _bloggingContext.SaveChanges();
