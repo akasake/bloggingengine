@@ -124,3 +124,604 @@ Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such col
    at CSharp_Pline.PokeMiddleware.InvokeAsync(HttpContext context) in D:\OneDrive - Thomas More\school 2019\ASP.NET\bloggingengine\PokeMiddleware.cs:line 22
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 2018-12-19 15:59:57.6881|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 799.6656ms 500 text/html; charset=utf-8 
+2018-12-19 17:05:24.6608||DEBUG|BloggingEngine.Program|init main 
+2018-12-19 17:05:25.1041||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\pham_\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2018-12-19 17:05:51.5939||DEBUG|BloggingEngine.Program|init main 
+2018-12-19 17:05:52.0632||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\pham_\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2018-12-19 17:07:30.5734|17|INFO|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLJ5PG9VF5E1" bad request data: "Invalid request line: '\x16\x03\x01\x02\x00\x01\x00\x01\xFC\x03\x035\xE0X\x88\xF1\xAEFW(\x189\xBB\x951\xF0\x00\x7F\x82\x91DO\xCE\x8F!U\xC2B\x13\xAC&7\xC1 \xF6#\x00\x006N\x82\xCABH;\xEF\xF8\xD3S\xCFp{\xB58\xD7\xEC\x88\xF3\xEA\xC0/L\x80\xD8\xE4\x19\x00"\xFA\xFA\x13\x01\x13\x02\x13\x03\xC0+\xC0/\xC0,\xC00\xCC\xA9\xCC\xA8\xC0\x13\xC0\x14\x00\x9C\x00\x9D\x00/\x005\x00\x0A'" Microsoft.AspNetCore.Server.Kestrel.Core.BadHttpRequestException: Invalid request line: '\x16\x03\x01\x02\x00\x01\x00\x01\xFC\x03\x035\xE0X\x88\xF1\xAEFW(\x189\xBB\x951\xF0\x00\x7F\x82\x91DO\xCE\x8F!U\xC2B\x13\xAC&7\xC1 \xF6#\x00\x006N\x82\xCABH;\xEF\xF8\xD3S\xCFp{\xB58\xD7\xEC\x88\xF3\xEA\xC0/L\x80\xD8\xE4\x19\x00"\xFA\xFA\x13\x01\x13\x02\x13\x03\xC0+\xC0/\xC0,\xC00\xCC\xA9\xCC\xA8\xC0\x13\xC0\x14\x00\x9C\x00\x9D\x00/\x005\x00\x0A'
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.RejectRequestLine(Byte* requestLine, Int32 length)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.GetUnknownMethod(Byte* data, Int32 length, Int32& methodLength)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.ParseRequestLine(TRequestHandler handler, Byte* data, Int32 length)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.ParseRequestLine(TRequestHandler handler, ReadOnlySequence`1& buffer, SequencePosition& consumed, SequencePosition& examined)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.IHttpParser<TRequestHandler>.ParseRequestLine(TRequestHandler handler, ReadOnlySequence`1& buffer, SequencePosition& consumed, SequencePosition& examined)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.TakeStartLine(ReadOnlySequence`1 buffer, SequencePosition& consumed, SequencePosition& examined)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.ParseRequest(ReadOnlySequence`1 buffer, SequencePosition& consumed, SequencePosition& examined)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1Connection.TryParseRequest(ReadResult result, Boolean& endConnection)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+2018-12-19 17:07:30.6155|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/   
+2018-12-19 17:07:31.3256|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action BloggingEngine.Controllers.HomeController.Index (BloggingEngine) 
+2018-12-19 17:07:31.3719|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method BloggingEngine.Controllers.HomeController.Index (BloggingEngine) - Validation state: Valid 
+2018-12-19 17:07:31.3844|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method BloggingEngine.Controllers.HomeController.Index (BloggingEngine), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.4162ms. 
+2018-12-19 17:07:31.4780|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2018-12-19 17:07:31.8851|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 472.9266ms. 
+2018-12-19 17:07:31.8851|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action BloggingEngine.Controllers.HomeController.Index (BloggingEngine) in 559.5331ms 
+2018-12-19 17:07:31.9100|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1296.5823ms 200 text/html; charset=utf-8 
+2018-12-19 17:07:35.7265|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/blogging   
+2018-12-19 17:07:35.7492|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Blogging"}. Executing action BloggingEngine.Controllers.BloggingController.Index (BloggingEngine) 
+2018-12-19 17:07:36.3322||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging 
+2018-12-19 17:07:36.3520|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method BloggingEngine.Controllers.BloggingController.Index (BloggingEngine) - Validation state: Valid 
+2018-12-19 17:07:36.3626||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello 
+2018-12-19 17:07:38.4035|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.4-rtm-31024 initialized 'BloggingContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None 
+2018-12-19 17:07:39.2769|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:07:39.3333|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "b"."Id", "b"."AuthorId", "b"."Name", "b.Author"."Id", "b.Author"."FirstName", "b.Author"."LastName"
+FROM "Blogs" AS "b"
+INNER JOIN "People" AS "b.Author" ON "b"."AuthorId" = "b.Author"."Id" 
+2018-12-19 17:07:39.5514|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method BloggingEngine.Controllers.BloggingController.Index (BloggingEngine), returned result Microsoft.AspNetCore.Mvc.ViewResult in 3193.8206ms. 
+2018-12-19 17:07:39.5514||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging 
+2018-12-19 17:07:39.5652|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2018-12-19 17:07:39.5958|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 33.7279ms. 
+2018-12-19 17:07:39.5958|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action BloggingEngine.Controllers.BloggingController.Index (BloggingEngine) in 3843.3748ms 
+2018-12-19 17:07:39.6107|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3884.2111ms 200 text/html; charset=utf-8 
+2018-12-19 17:07:40.3394|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/blogging   
+2018-12-19 17:07:40.3511|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Blogging"}. Executing action BloggingEngine.Controllers.BloggingController.Index (BloggingEngine) 
+2018-12-19 17:07:40.3511||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging 
+2018-12-19 17:07:40.3584|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method BloggingEngine.Controllers.BloggingController.Index (BloggingEngine) - Validation state: Valid 
+2018-12-19 17:07:40.3584||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello 
+2018-12-19 17:07:40.3584|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.4-rtm-31024 initialized 'BloggingContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None 
+2018-12-19 17:07:40.3733|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:07:40.3733|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "b"."Id", "b"."AuthorId", "b"."Name", "b.Author"."Id", "b.Author"."FirstName", "b.Author"."LastName"
+FROM "Blogs" AS "b"
+INNER JOIN "People" AS "b.Author" ON "b"."AuthorId" = "b.Author"."Id" 
+2018-12-19 17:07:40.3733|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method BloggingEngine.Controllers.BloggingController.Index (BloggingEngine), returned result Microsoft.AspNetCore.Mvc.ViewResult in 19.1983ms. 
+2018-12-19 17:07:40.3974||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging 
+2018-12-19 17:07:40.4090|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2018-12-19 17:07:40.4090|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 3.3714ms. 
+2018-12-19 17:07:40.4258|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action BloggingEngine.Controllers.BloggingController.Index (BloggingEngine) in 71.3492ms 
+2018-12-19 17:07:40.4258|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 88.2491ms 200 text/html; charset=utf-8 
+2018-12-19 17:08:05.4403|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/blogging/blog/1   
+2018-12-19 17:08:05.5460|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Posts", controller = "Blogging"}. Executing action BloggingEngine.Controllers.BloggingController.Posts (BloggingEngine) 
+2018-12-19 17:08:05.6042||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/blog/1 
+2018-12-19 17:08:05.6270|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method BloggingEngine.Controllers.BloggingController.Posts (BloggingEngine) with arguments (1) - Validation state: Valid 
+2018-12-19 17:08:05.6391|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.4-rtm-31024 initialized 'BloggingContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None 
+2018-12-19 17:08:05.7700|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:08:05.8435|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (27ms) [Parameters=[@__Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "_bloggingContext"."Id", "_bloggingContext"."BlogId", "_bloggingContext"."Content", "_bloggingContext"."Date", "_bloggingContext"."Title"
+FROM "Posts" AS "_bloggingContext"
+WHERE "_bloggingContext"."BlogId" = @__Id_0 
+2018-12-19 17:08:05.9961|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:08:06.0051|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."AuthorId", "e"."Name"
+FROM "Blogs" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 
+2018-12-19 17:08:06.0917|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:08:06.0951|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."FirstName", "e"."LastName"
+FROM "People" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 
+2018-12-19 17:08:06.1183|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method BloggingEngine.Controllers.BloggingController.Posts (BloggingEngine), returned result Microsoft.AspNetCore.Mvc.ViewResult in 489.262ms. 
+2018-12-19 17:08:06.1183||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/blog/1 
+2018-12-19 17:08:06.1321|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Posts. 
+2018-12-19 17:08:06.1830|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Posts executed in 56.9362ms. 
+2018-12-19 17:08:06.1830|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action BloggingEngine.Controllers.BloggingController.Posts (BloggingEngine) in 638.1969ms 
+2018-12-19 17:08:06.1930|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 752.784ms 200 text/html; charset=utf-8 
+2018-12-19 17:13:46.1661|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/blogging/post/1   
+2018-12-19 17:13:46.2331|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "PostDetail", controller = "Blogging"}. Executing action BloggingEngine.Controllers.BloggingController.PostDetail (BloggingEngine) 
+2018-12-19 17:13:46.2469||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 
+2018-12-19 17:13:46.2635|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method BloggingEngine.Controllers.BloggingController.PostDetail (BloggingEngine) with arguments (1) - Validation state: Valid 
+2018-12-19 17:13:46.2673|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.4-rtm-31024 initialized 'BloggingContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None 
+2018-12-19 17:13:46.2673|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:13:46.2673|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."BlogId", "e"."Content", "e"."Date", "e"."Title"
+FROM "Posts" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 
+2018-12-19 17:13:46.3157|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:13:46.3157|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "_bloggingContext"."Id", "_bloggingContext"."AuthorId", "_bloggingContext"."Content", "_bloggingContext"."Date", "_bloggingContext"."PostId", "_bloggingContext.Author"."Id", "_bloggingContext.Author"."FirstName", "_bloggingContext.Author"."LastName"
+FROM "Comments" AS "_bloggingContext"
+INNER JOIN "People" AS "_bloggingContext.Author" ON "_bloggingContext"."AuthorId" = "_bloggingContext.Author"."Id"
+WHERE "_bloggingContext"."PostId" = @__Id_0 
+2018-12-19 17:13:46.3269|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:13:46.3269|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."FirstName", "p"."LastName"
+FROM "People" AS "p" 
+2018-12-19 17:13:46.3269|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method BloggingEngine.Controllers.BloggingController.PostDetail (BloggingEngine), returned result Microsoft.AspNetCore.Mvc.ViewResult in 65.2775ms. 
+2018-12-19 17:13:46.3269||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 
+2018-12-19 17:13:50.0889|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view PostDetail. 
+2018-12-19 17:13:50.1550|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view PostDetail executed in 3819.2879ms. 
+2018-12-19 17:13:50.1550|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action BloggingEngine.Controllers.BloggingController.PostDetail (BloggingEngine) in 3912.0554ms 
+2018-12-19 17:13:50.1550|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3993.7062ms 200 text/html; charset=utf-8 
+2018-12-19 17:13:59.4080|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/blogging/post/1 application/x-www-form-urlencoded 236 
+2018-12-19 17:13:59.4974|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Comment", controller = "Blogging"}. Executing action BloggingEngine.Controllers.BloggingController.Comment (BloggingEngine) 
+2018-12-19 17:13:59.6305||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 
+2018-12-19 17:13:59.6305|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method BloggingEngine.Controllers.BloggingController.Comment (BloggingEngine) with arguments (1, BloggingEngine.DataAccess.PostWithComment) - Validation state: Valid 
+2018-12-19 17:13:59.6474|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.4-rtm-31024 initialized 'BloggingContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None 
+2018-12-19 17:13:59.9176|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:14:00.2525|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (23ms) [Parameters=[@p0='?', @p1='?' (Size = 12), @p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Comments" ("AuthorId", "Content", "Date", "PostId")
+VALUES (@p0, @p1, @p2, @p3);
+SELECT "Id"
+FROM "Comments"
+WHERE changes() = 1 AND "Id" = last_insert_rowid(); 
+2018-12-19 17:14:00.5227|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method BloggingEngine.Controllers.BloggingController.Comment (BloggingEngine), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 883.8721ms. 
+2018-12-19 17:14:00.5227||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 
+2018-12-19 17:14:00.5715|1|INFO|Microsoft.AspNetCore.Mvc.RedirectToActionResult|Executing RedirectResult, redirecting to /blogging/post/1. 
+2018-12-19 17:14:00.5715|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action BloggingEngine.Controllers.BloggingController.Comment (BloggingEngine) in 1065.7638ms 
+2018-12-19 17:14:00.5782|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1170.2702ms 302  
+2018-12-19 17:14:00.5931|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/blogging/post/1   
+2018-12-19 17:14:00.5931|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "PostDetail", controller = "Blogging"}. Executing action BloggingEngine.Controllers.BloggingController.PostDetail (BloggingEngine) 
+2018-12-19 17:14:00.5931||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 
+2018-12-19 17:14:00.6188|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method BloggingEngine.Controllers.BloggingController.PostDetail (BloggingEngine) with arguments (1) - Validation state: Valid 
+2018-12-19 17:14:00.6188|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.4-rtm-31024 initialized 'BloggingContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None 
+2018-12-19 17:14:00.6623|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:14:00.6623|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."BlogId", "e"."Content", "e"."Date", "e"."Title"
+FROM "Posts" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 
+2018-12-19 17:14:00.6755|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:14:00.6755|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "_bloggingContext"."Id", "_bloggingContext"."AuthorId", "_bloggingContext"."Content", "_bloggingContext"."Date", "_bloggingContext"."PostId", "_bloggingContext.Author"."Id", "_bloggingContext.Author"."FirstName", "_bloggingContext.Author"."LastName"
+FROM "Comments" AS "_bloggingContext"
+INNER JOIN "People" AS "_bloggingContext.Author" ON "_bloggingContext"."AuthorId" = "_bloggingContext.Author"."Id"
+WHERE "_bloggingContext"."PostId" = @__Id_0 
+2018-12-19 17:14:00.7028|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:14:00.7124|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."FirstName", "p"."LastName"
+FROM "People" AS "p" 
+2018-12-19 17:14:00.7124|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method BloggingEngine.Controllers.BloggingController.PostDetail (BloggingEngine), returned result Microsoft.AspNetCore.Mvc.ViewResult in 91.8232ms. 
+2018-12-19 17:14:00.7160||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 
+2018-12-19 17:14:00.7160|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view PostDetail. 
+2018-12-19 17:14:00.7389|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view PostDetail executed in 12.8793ms. 
+2018-12-19 17:14:00.7389|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action BloggingEngine.Controllers.BloggingController.PostDetail (BloggingEngine) in 137.8246ms 
+2018-12-19 17:14:00.7389|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 151.2369ms 200 text/html; charset=utf-8 
+2018-12-19 17:16:00.0510|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/blogging/post/1 application/x-www-form-urlencoded 228 
+2018-12-19 17:16:00.0510|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Comment", controller = "Blogging"}. Executing action BloggingEngine.Controllers.BloggingController.Comment (BloggingEngine) 
+2018-12-19 17:16:00.0685||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 
+2018-12-19 17:16:00.0685|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method BloggingEngine.Controllers.BloggingController.Comment (BloggingEngine) with arguments (1, BloggingEngine.DataAccess.PostWithComment) - Validation state: Valid 
+2018-12-19 17:16:00.0685|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.4-rtm-31024 initialized 'BloggingContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None 
+2018-12-19 17:16:00.0862|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:16:00.1095|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[@p0='?', @p1='?' (Size = 4), @p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Comments" ("AuthorId", "Content", "Date", "PostId")
+VALUES (@p0, @p1, @p2, @p3);
+SELECT "Id"
+FROM "Comments"
+WHERE changes() = 1 AND "Id" = last_insert_rowid(); 
+2018-12-19 17:16:00.2489|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method BloggingEngine.Controllers.BloggingController.Comment (BloggingEngine), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 172.6974ms. 
+2018-12-19 17:16:00.2499||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 
+2018-12-19 17:16:00.2499|1|INFO|Microsoft.AspNetCore.Mvc.RedirectToActionResult|Executing RedirectResult, redirecting to /blogging/post/1. 
+2018-12-19 17:16:00.2499|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action BloggingEngine.Controllers.BloggingController.Comment (BloggingEngine) in 187.6189ms 
+2018-12-19 17:16:00.2499|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 203.7161ms 302  
+2018-12-19 17:16:00.2499|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/blogging/post/1   
+2018-12-19 17:16:00.2679|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "PostDetail", controller = "Blogging"}. Executing action BloggingEngine.Controllers.BloggingController.PostDetail (BloggingEngine) 
+2018-12-19 17:16:00.2679||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 
+2018-12-19 17:16:00.2679|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method BloggingEngine.Controllers.BloggingController.PostDetail (BloggingEngine) with arguments (1) - Validation state: Valid 
+2018-12-19 17:16:00.2679|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.4-rtm-31024 initialized 'BloggingContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None 
+2018-12-19 17:16:00.3019|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:16:00.3019|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."BlogId", "e"."Content", "e"."Date", "e"."Title"
+FROM "Posts" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 
+2018-12-19 17:16:00.3019|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:16:00.3019|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "_bloggingContext"."Id", "_bloggingContext"."AuthorId", "_bloggingContext"."Content", "_bloggingContext"."Date", "_bloggingContext"."PostId", "_bloggingContext.Author"."Id", "_bloggingContext.Author"."FirstName", "_bloggingContext.Author"."LastName"
+FROM "Comments" AS "_bloggingContext"
+INNER JOIN "People" AS "_bloggingContext.Author" ON "_bloggingContext"."AuthorId" = "_bloggingContext.Author"."Id"
+WHERE "_bloggingContext"."PostId" = @__Id_0 
+2018-12-19 17:16:00.3019|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:16:00.3019|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."FirstName", "p"."LastName"
+FROM "People" AS "p" 
+2018-12-19 17:16:00.3146|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method BloggingEngine.Controllers.BloggingController.PostDetail (BloggingEngine), returned result Microsoft.AspNetCore.Mvc.ViewResult in 38.0953ms. 
+2018-12-19 17:16:00.3146||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 
+2018-12-19 17:16:00.3146|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view PostDetail. 
+2018-12-19 17:16:00.3146|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view PostDetail executed in 4.4811ms. 
+2018-12-19 17:16:00.3347|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action BloggingEngine.Controllers.BloggingController.PostDetail (BloggingEngine) in 64.3582ms 
+2018-12-19 17:16:00.3347|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 73.1993ms 200 text/html; charset=utf-8 
+2018-12-19 17:16:25.2459||DEBUG|BloggingEngine.Program|init main 
+2018-12-19 17:16:25.7082||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\pham_\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2018-12-19 17:16:27.5360|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/blogging   
+2018-12-19 17:16:28.4511|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Blogging"}. Executing action BloggingEngine.Controllers.BloggingController.Index (BloggingEngine) 
+2018-12-19 17:16:28.9904||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging 
+2018-12-19 17:16:29.0122|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method BloggingEngine.Controllers.BloggingController.Index (BloggingEngine) - Validation state: Valid 
+2018-12-19 17:16:29.0173||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello 
+2018-12-19 17:16:29.2257|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/blogging   
+2018-12-19 17:16:29.2257|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Blogging"}. Executing action BloggingEngine.Controllers.BloggingController.Index (BloggingEngine) 
+2018-12-19 17:16:29.2257||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging 
+2018-12-19 17:16:29.2441|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method BloggingEngine.Controllers.BloggingController.Index (BloggingEngine) - Validation state: Valid 
+2018-12-19 17:16:29.2441||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello 
+2018-12-19 17:16:30.6787|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.4-rtm-31024 initialized 'BloggingContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None 
+2018-12-19 17:16:30.6787|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.4-rtm-31024 initialized 'BloggingContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None 
+2018-12-19 17:16:31.6041|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (31ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:16:31.6041|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (31ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:16:31.6602|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "b"."Id", "b"."AuthorId", "b"."Name", "b.Author"."Id", "b.Author"."FirstName", "b.Author"."LastName"
+FROM "Blogs" AS "b"
+INNER JOIN "People" AS "b.Author" ON "b"."AuthorId" = "b.Author"."Id" 
+2018-12-19 17:16:31.6602|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "b"."Id", "b"."AuthorId", "b"."Name", "b.Author"."Id", "b.Author"."FirstName", "b.Author"."LastName"
+FROM "Blogs" AS "b"
+INNER JOIN "People" AS "b.Author" ON "b"."AuthorId" = "b.Author"."Id" 
+2018-12-19 17:16:31.8903|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method BloggingEngine.Controllers.BloggingController.Index (BloggingEngine), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2637.9109ms. 
+2018-12-19 17:16:31.8903|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method BloggingEngine.Controllers.BloggingController.Index (BloggingEngine), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2871.5134ms. 
+2018-12-19 17:16:31.8919||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging 
+2018-12-19 17:16:31.8919||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging 
+2018-12-19 17:16:31.9494|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2018-12-19 17:16:31.9494|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2018-12-19 17:16:32.1627|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 251.2514ms. 
+2018-12-19 17:16:32.1627|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action BloggingEngine.Controllers.BloggingController.Index (BloggingEngine) in 3709.8421ms 
+2018-12-19 17:16:32.1627|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 251.3612ms. 
+2018-12-19 17:16:32.1757|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action BloggingEngine.Controllers.BloggingController.Index (BloggingEngine) in 2943.6974ms 
+2018-12-19 17:16:32.1757|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4649.229ms 200 text/html; charset=utf-8 
+2018-12-19 17:16:32.1757|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2955.8977ms 200 text/html; charset=utf-8 
+2018-12-19 17:16:35.0595|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/blogging/blog/1   
+2018-12-19 17:16:35.1872|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Posts", controller = "Blogging"}. Executing action BloggingEngine.Controllers.BloggingController.Posts (BloggingEngine) 
+2018-12-19 17:16:35.2412||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/blog/1 
+2018-12-19 17:16:35.2575|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method BloggingEngine.Controllers.BloggingController.Posts (BloggingEngine) with arguments (1) - Validation state: Valid 
+2018-12-19 17:16:35.2701|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.4-rtm-31024 initialized 'BloggingContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None 
+2018-12-19 17:16:35.4086|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:16:35.4872|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (26ms) [Parameters=[@__Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "_bloggingContext"."Id", "_bloggingContext"."BlogId", "_bloggingContext"."Content", "_bloggingContext"."Date", "_bloggingContext"."Title"
+FROM "Posts" AS "_bloggingContext"
+WHERE "_bloggingContext"."BlogId" = @__Id_0 
+2018-12-19 17:16:35.6426|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:16:35.6541|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."AuthorId", "e"."Name"
+FROM "Blogs" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 
+2018-12-19 17:16:35.7424|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:16:35.7424|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."FirstName", "e"."LastName"
+FROM "People" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 
+2018-12-19 17:16:35.7580|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method BloggingEngine.Controllers.BloggingController.Posts (BloggingEngine), returned result Microsoft.AspNetCore.Mvc.ViewResult in 498.1197ms. 
+2018-12-19 17:16:35.7580||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/blog/1 
+2018-12-19 17:16:35.7717|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Posts. 
+2018-12-19 17:16:35.8297|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Posts executed in 63.6736ms. 
+2018-12-19 17:16:35.8297|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action BloggingEngine.Controllers.BloggingController.Posts (BloggingEngine) in 644.8893ms 
+2018-12-19 17:16:35.8602|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 800.72ms 200 text/html; charset=utf-8 
+2018-12-19 17:16:44.4015|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/blogging/post/1   
+2018-12-19 17:16:44.4126|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "PostDetail", controller = "Blogging"}. Executing action BloggingEngine.Controllers.BloggingController.PostDetail (BloggingEngine) 
+2018-12-19 17:16:44.4126||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 
+2018-12-19 17:16:44.4288|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method BloggingEngine.Controllers.BloggingController.PostDetail (BloggingEngine) with arguments (1) - Validation state: Valid 
+2018-12-19 17:16:44.4415|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.4-rtm-31024 initialized 'BloggingContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None 
+2018-12-19 17:16:44.4710|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:16:44.4861|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."BlogId", "e"."Content", "e"."Date", "e"."Title"
+FROM "Posts" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 
+2018-12-19 17:16:44.5351|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:16:44.5351|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "_bloggingContext"."Id", "_bloggingContext"."AuthorId", "_bloggingContext"."Content", "_bloggingContext"."Date", "_bloggingContext"."PostId", "_bloggingContext.Author"."Id", "_bloggingContext.Author"."FirstName", "_bloggingContext.Author"."LastName"
+FROM "Comments" AS "_bloggingContext"
+INNER JOIN "People" AS "_bloggingContext.Author" ON "_bloggingContext"."AuthorId" = "_bloggingContext.Author"."Id"
+WHERE "_bloggingContext"."PostId" = @__Id_0 
+2018-12-19 17:16:44.5969|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:16:44.5969|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."FirstName", "p"."LastName"
+FROM "People" AS "p" 
+2018-12-19 17:16:44.5969|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method BloggingEngine.Controllers.BloggingController.PostDetail (BloggingEngine), returned result Microsoft.AspNetCore.Mvc.ViewResult in 166.4993ms. 
+2018-12-19 17:16:44.5969||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 
+2018-12-19 17:16:44.6118|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view PostDetail. 
+2018-12-19 17:16:44.7807|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view PostDetail executed in 172.9609ms. 
+2018-12-19 17:16:44.7834|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action BloggingEngine.Controllers.BloggingController.PostDetail (BloggingEngine) in 365.4407ms 
+2018-12-19 17:16:44.7834|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 385.1618ms 200 text/html; charset=utf-8 
+2018-12-19 17:16:51.4471|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/blogging/post/1 application/x-www-form-urlencoded 229 
+2018-12-19 17:16:51.5851|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Comment", controller = "Blogging"}. Executing action BloggingEngine.Controllers.BloggingController.Comment (BloggingEngine) 
+2018-12-19 17:16:51.7231||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 
+2018-12-19 17:16:51.7346|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method BloggingEngine.Controllers.BloggingController.Comment (BloggingEngine) with arguments (1, BloggingEngine.DataAccess.PostWithComment) - Validation state: Valid 
+2018-12-19 17:16:51.7517|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.4-rtm-31024 initialized 'BloggingContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None 
+2018-12-19 17:16:52.0402|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:16:52.3694|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (14ms) [Parameters=[@p0='?', @p1='?' (Size = 5), @p2='?' (Size = 16), @p3='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Comments" ("AuthorId", "Content", "Date", "PostId")
+VALUES (@p0, @p1, @p2, @p3);
+SELECT "Id"
+FROM "Comments"
+WHERE changes() = 1 AND "Id" = last_insert_rowid(); 
+2018-12-19 17:16:52.6196|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method BloggingEngine.Controllers.BloggingController.Comment (BloggingEngine), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 881.7482ms. 
+2018-12-19 17:16:52.6196||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 
+2018-12-19 17:16:52.6288|1|INFO|Microsoft.AspNetCore.Mvc.RedirectToActionResult|Executing RedirectResult, redirecting to /blogging/post/1. 
+2018-12-19 17:16:52.6288|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action BloggingEngine.Controllers.BloggingController.Comment (BloggingEngine) in 1042.1407ms 
+2018-12-19 17:16:52.6288|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1190.5518ms 302  
+2018-12-19 17:16:52.6515|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/blogging/post/1   
+2018-12-19 17:16:52.6577|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "PostDetail", controller = "Blogging"}. Executing action BloggingEngine.Controllers.BloggingController.PostDetail (BloggingEngine) 
+2018-12-19 17:16:52.6577||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 
+2018-12-19 17:16:52.6771|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method BloggingEngine.Controllers.BloggingController.PostDetail (BloggingEngine) with arguments (1) - Validation state: Valid 
+2018-12-19 17:16:52.6771|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.4-rtm-31024 initialized 'BloggingContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None 
+2018-12-19 17:16:52.7237|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:16:52.7343|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."BlogId", "e"."Content", "e"."Date", "e"."Title"
+FROM "Posts" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 
+2018-12-19 17:16:52.7343|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:16:52.7503|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "_bloggingContext"."Id", "_bloggingContext"."AuthorId", "_bloggingContext"."Content", "_bloggingContext"."Date", "_bloggingContext"."PostId", "_bloggingContext.Author"."Id", "_bloggingContext.Author"."FirstName", "_bloggingContext.Author"."LastName"
+FROM "Comments" AS "_bloggingContext"
+INNER JOIN "People" AS "_bloggingContext.Author" ON "_bloggingContext"."AuthorId" = "_bloggingContext.Author"."Id"
+WHERE "_bloggingContext"."PostId" = @__Id_0 
+2018-12-19 17:16:52.7503|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:16:52.7503|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."FirstName", "p"."LastName"
+FROM "People" AS "p" 
+2018-12-19 17:16:52.7503|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method BloggingEngine.Controllers.BloggingController.PostDetail (BloggingEngine), returned result Microsoft.AspNetCore.Mvc.ViewResult in 77.1728ms. 
+2018-12-19 17:16:52.7503||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 
+2018-12-19 17:16:52.7731|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view PostDetail. 
+2018-12-19 17:16:52.7850|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view PostDetail executed in 11.93ms. 
+2018-12-19 17:16:52.7850|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action BloggingEngine.Controllers.BloggingController.PostDetail (BloggingEngine) in 123.8019ms 
+2018-12-19 17:16:52.8092|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 157.6875ms 200 text/html; charset=utf-8 
+2018-12-19 17:17:13.4819||DEBUG|BloggingEngine.Program|init main 
+2018-12-19 17:17:13.9265||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\pham_\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2018-12-19 17:18:47.1371|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/blogging/post/1   
+2018-12-19 17:18:47.7466|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "PostDetail", controller = "Blogging"}. Executing action BloggingEngine.Controllers.BloggingController.PostDetail (BloggingEngine) 
+2018-12-19 17:18:48.3332||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 
+2018-12-19 17:18:48.3586|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method BloggingEngine.Controllers.BloggingController.PostDetail (BloggingEngine) with arguments (1) - Validation state: Valid 
+2018-12-19 17:18:50.3524|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.4-rtm-31024 initialized 'BloggingContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None 
+2018-12-19 17:18:51.1399|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (32ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:18:51.2330|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (14ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."BlogId", "e"."Content", "e"."Date", "e"."Title"
+FROM "Posts" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 
+2018-12-19 17:18:51.6587|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:18:51.6587|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "_bloggingContext"."Id", "_bloggingContext"."AuthorId", "_bloggingContext"."Content", "_bloggingContext"."Date", "_bloggingContext"."PostId", "_bloggingContext.Author"."Id", "_bloggingContext.Author"."FirstName", "_bloggingContext.Author"."LastName"
+FROM "Comments" AS "_bloggingContext"
+INNER JOIN "People" AS "_bloggingContext.Author" ON "_bloggingContext"."AuthorId" = "_bloggingContext.Author"."Id"
+WHERE "_bloggingContext"."PostId" = @__Id_0 
+2018-12-19 17:18:51.7642|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:18:51.7642|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."FirstName", "p"."LastName"
+FROM "People" AS "p" 
+2018-12-19 17:18:51.7642|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method BloggingEngine.Controllers.BloggingController.PostDetail (BloggingEngine), returned result Microsoft.AspNetCore.Mvc.ViewResult in 3412.0986ms. 
+2018-12-19 17:18:51.7795||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 
+2018-12-19 17:18:51.8366|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view PostDetail. 
+2018-12-19 17:18:52.1002|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view PostDetail executed in 299.4706ms. 
+2018-12-19 17:18:52.1002|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action BloggingEngine.Controllers.BloggingController.PostDetail (BloggingEngine) in 4353.3949ms 
+2018-12-19 17:18:52.1354|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4999.5567ms 200 text/html; charset=utf-8 
+2018-12-19 17:18:57.0439|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/blogging/post/1 application/x-www-form-urlencoded 230 
+2018-12-19 17:18:57.1582|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Comment", controller = "Blogging"}. Executing action BloggingEngine.Controllers.BloggingController.Comment (BloggingEngine) 
+2018-12-19 17:18:57.3571||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 
+2018-12-19 17:18:57.3647|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method BloggingEngine.Controllers.BloggingController.Comment (BloggingEngine) with arguments (1, BloggingEngine.DataAccess.PostWithComment) - Validation state: Valid 
+2018-12-19 17:18:57.3831|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.4-rtm-31024 initialized 'BloggingContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None 
+2018-12-19 17:18:57.6778|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:18:57.9540|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (11ms) [Parameters=[@p0='?', @p1='?' (Size = 6), @p2='?' (Size = 24), @p3='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Comments" ("AuthorId", "Content", "Date", "PostId")
+VALUES (@p0, @p1, @p2, @p3);
+SELECT "Id"
+FROM "Comments"
+WHERE changes() = 1 AND "Id" = last_insert_rowid(); 
+2018-12-19 17:18:58.1286|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method BloggingEngine.Controllers.BloggingController.Comment (BloggingEngine), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 761.7267ms. 
+2018-12-19 17:18:58.1286||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 
+2018-12-19 17:18:58.1286|1|INFO|Microsoft.AspNetCore.Mvc.RedirectToActionResult|Executing RedirectResult, redirecting to /blogging/post/1. 
+2018-12-19 17:18:58.1286|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action BloggingEngine.Controllers.BloggingController.Comment (BloggingEngine) in 972.2295ms 
+2018-12-19 17:18:58.1458|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1101.9396ms 302  
+2018-12-19 17:18:58.1458|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/blogging/post/1   
+2018-12-19 17:18:58.1595|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "PostDetail", controller = "Blogging"}. Executing action BloggingEngine.Controllers.BloggingController.PostDetail (BloggingEngine) 
+2018-12-19 17:18:58.1595||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 
+2018-12-19 17:18:58.1595|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method BloggingEngine.Controllers.BloggingController.PostDetail (BloggingEngine) with arguments (1) - Validation state: Valid 
+2018-12-19 17:18:58.1595|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.4-rtm-31024 initialized 'BloggingContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None 
+2018-12-19 17:18:58.2163|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:18:58.2163|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."BlogId", "e"."Content", "e"."Date", "e"."Title"
+FROM "Posts" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 
+2018-12-19 17:18:58.2163|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:18:58.2362|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "_bloggingContext"."Id", "_bloggingContext"."AuthorId", "_bloggingContext"."Content", "_bloggingContext"."Date", "_bloggingContext"."PostId", "_bloggingContext.Author"."Id", "_bloggingContext.Author"."FirstName", "_bloggingContext.Author"."LastName"
+FROM "Comments" AS "_bloggingContext"
+INNER JOIN "People" AS "_bloggingContext.Author" ON "_bloggingContext"."AuthorId" = "_bloggingContext.Author"."Id"
+WHERE "_bloggingContext"."PostId" = @__Id_0 
+2018-12-19 17:18:58.2362|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:18:58.2362|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."FirstName", "p"."LastName"
+FROM "People" AS "p" 
+2018-12-19 17:18:58.2362|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method BloggingEngine.Controllers.BloggingController.PostDetail (BloggingEngine), returned result Microsoft.AspNetCore.Mvc.ViewResult in 78.8494ms. 
+2018-12-19 17:18:58.2362||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 
+2018-12-19 17:18:58.2544|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view PostDetail. 
+2018-12-19 17:18:58.2652|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view PostDetail executed in 11.132ms. 
+2018-12-19 17:18:58.2652|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action BloggingEngine.Controllers.BloggingController.PostDetail (BloggingEngine) in 106.1513ms 
+2018-12-19 17:18:58.2652|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 119.4021ms 200 text/html; charset=utf-8 
+2018-12-19 17:20:57.7712|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/blogging/post/1 application/x-www-form-urlencoded 278 
+2018-12-19 17:20:57.7813|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Comment", controller = "Blogging"}. Executing action BloggingEngine.Controllers.BloggingController.Comment (BloggingEngine) 
+2018-12-19 17:20:57.7813||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 
+2018-12-19 17:20:57.8065|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method BloggingEngine.Controllers.BloggingController.Comment (BloggingEngine) with arguments (1, BloggingEngine.DataAccess.PostWithComment) - Validation state: Valid 
+2018-12-19 17:20:57.8162|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.4-rtm-31024 initialized 'BloggingContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None 
+2018-12-19 17:20:57.8162|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:20:57.8310|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[@p0='?', @p1='?' (Size = 32), @p2='?' (Size = 24), @p3='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Comments" ("AuthorId", "Content", "Date", "PostId")
+VALUES (@p0, @p1, @p2, @p3);
+SELECT "Id"
+FROM "Comments"
+WHERE changes() = 1 AND "Id" = last_insert_rowid(); 
+2018-12-19 17:20:58.0014|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method BloggingEngine.Controllers.BloggingController.Comment (BloggingEngine), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 186.2141ms. 
+2018-12-19 17:20:58.0014||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 
+2018-12-19 17:20:58.0014|1|INFO|Microsoft.AspNetCore.Mvc.RedirectToActionResult|Executing RedirectResult, redirecting to /blogging/post/1. 
+2018-12-19 17:20:58.0014|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action BloggingEngine.Controllers.BloggingController.Comment (BloggingEngine) in 222.916ms 
+2018-12-19 17:20:58.0014|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 242.3847ms 302  
+2018-12-19 17:20:58.0237|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/blogging/post/1   
+2018-12-19 17:20:58.0237|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "PostDetail", controller = "Blogging"}. Executing action BloggingEngine.Controllers.BloggingController.PostDetail (BloggingEngine) 
+2018-12-19 17:20:58.0237||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 
+2018-12-19 17:20:58.0348|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method BloggingEngine.Controllers.BloggingController.PostDetail (BloggingEngine) with arguments (1) - Validation state: Valid 
+2018-12-19 17:20:58.0348|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.4-rtm-31024 initialized 'BloggingContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None 
+2018-12-19 17:20:58.1048|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:20:58.1080|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."BlogId", "e"."Content", "e"."Date", "e"."Title"
+FROM "Posts" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 
+2018-12-19 17:20:58.1080|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:20:58.1080|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "_bloggingContext"."Id", "_bloggingContext"."AuthorId", "_bloggingContext"."Content", "_bloggingContext"."Date", "_bloggingContext"."PostId", "_bloggingContext.Author"."Id", "_bloggingContext.Author"."FirstName", "_bloggingContext.Author"."LastName"
+FROM "Comments" AS "_bloggingContext"
+INNER JOIN "People" AS "_bloggingContext.Author" ON "_bloggingContext"."AuthorId" = "_bloggingContext.Author"."Id"
+WHERE "_bloggingContext"."PostId" = @__Id_0 
+2018-12-19 17:20:58.1080|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:20:58.1252|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."FirstName", "p"."LastName"
+FROM "People" AS "p" 
+2018-12-19 17:20:58.1252|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method BloggingEngine.Controllers.BloggingController.PostDetail (BloggingEngine), returned result Microsoft.AspNetCore.Mvc.ViewResult in 92.7236ms. 
+2018-12-19 17:20:58.1252||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 
+2018-12-19 17:20:58.1252|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view PostDetail. 
+2018-12-19 17:20:58.1420|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view PostDetail executed in 6.4533ms. 
+2018-12-19 17:20:58.1420|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action BloggingEngine.Controllers.BloggingController.PostDetail (BloggingEngine) in 114.9422ms 
+2018-12-19 17:20:58.1420|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 127.459ms 200 text/html; charset=utf-8 
+2018-12-19 17:21:58.4573||DEBUG|BloggingEngine.Program|init main 
+2018-12-19 17:21:58.9316||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\pham_\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2018-12-19 17:22:07.2811|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/blogging/post/1   
+2018-12-19 17:22:07.9409|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "PostDetail", controller = "Blogging"}. Executing action BloggingEngine.Controllers.BloggingController.PostDetail (BloggingEngine) 
+2018-12-19 17:22:08.5749||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 
+2018-12-19 17:22:08.6013|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method BloggingEngine.Controllers.BloggingController.PostDetail (BloggingEngine) with arguments (1) - Validation state: Valid 
+2018-12-19 17:22:10.8167|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.4-rtm-31024 initialized 'BloggingContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None 
+2018-12-19 17:22:11.7969|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (33ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:22:11.9112|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (17ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."BlogId", "e"."Content", "e"."Date", "e"."Title"
+FROM "Posts" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 
+2018-12-19 17:22:12.3910|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:22:12.3910|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "_bloggingContext"."Id", "_bloggingContext"."AuthorId", "_bloggingContext"."Content", "_bloggingContext"."Date", "_bloggingContext"."PostId", "_bloggingContext.Author"."Id", "_bloggingContext.Author"."FirstName", "_bloggingContext.Author"."LastName"
+FROM "Comments" AS "_bloggingContext"
+INNER JOIN "People" AS "_bloggingContext.Author" ON "_bloggingContext"."AuthorId" = "_bloggingContext.Author"."Id"
+WHERE "_bloggingContext"."PostId" = @__Id_0 
+2018-12-19 17:22:12.5198|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:22:12.5198|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."FirstName", "p"."LastName"
+FROM "People" AS "p" 
+2018-12-19 17:22:12.5324|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method BloggingEngine.Controllers.BloggingController.PostDetail (BloggingEngine), returned result Microsoft.AspNetCore.Mvc.ViewResult in 3923.9088ms. 
+2018-12-19 17:22:12.5324||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 
+2018-12-19 17:22:12.6279|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view PostDetail. 
+2018-12-19 17:22:12.9207|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view PostDetail executed in 358.9289ms. 
+2018-12-19 17:22:12.9207|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action BloggingEngine.Controllers.BloggingController.PostDetail (BloggingEngine) in 4984.1853ms 
+2018-12-19 17:22:12.9936|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 5713.6987ms 200 text/html; charset=utf-8 
+2018-12-19 17:22:28.7869|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/blogging/post/1   
+2018-12-19 17:22:28.7869|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "PostDetail", controller = "Blogging"}. Executing action BloggingEngine.Controllers.BloggingController.PostDetail (BloggingEngine) 
+2018-12-19 17:22:28.8087||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 
+2018-12-19 17:22:28.8222|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method BloggingEngine.Controllers.BloggingController.PostDetail (BloggingEngine) with arguments (1) - Validation state: Valid 
+2018-12-19 17:22:28.8284|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.4-rtm-31024 initialized 'BloggingContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None 
+2018-12-19 17:22:28.8665|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:22:28.8790|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."BlogId", "e"."Content", "e"."Date", "e"."Title"
+FROM "Posts" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 
+2018-12-19 17:22:28.8913|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:22:28.8913|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "_bloggingContext"."Id", "_bloggingContext"."AuthorId", "_bloggingContext"."Content", "_bloggingContext"."Date", "_bloggingContext"."PostId", "_bloggingContext.Author"."Id", "_bloggingContext.Author"."FirstName", "_bloggingContext.Author"."LastName"
+FROM "Comments" AS "_bloggingContext"
+INNER JOIN "People" AS "_bloggingContext.Author" ON "_bloggingContext"."AuthorId" = "_bloggingContext.Author"."Id"
+WHERE "_bloggingContext"."PostId" = @__Id_0 
+2018-12-19 17:22:28.8913|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:22:28.8913|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."FirstName", "p"."LastName"
+FROM "People" AS "p" 
+2018-12-19 17:22:28.9104|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method BloggingEngine.Controllers.BloggingController.PostDetail (BloggingEngine), returned result Microsoft.AspNetCore.Mvc.ViewResult in 84.7197ms. 
+2018-12-19 17:22:28.9254||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 
+2018-12-19 17:22:28.9434|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view PostDetail. 
+2018-12-19 17:22:28.9568|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view PostDetail executed in 13.7023ms. 
+2018-12-19 17:22:29.0084|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action BloggingEngine.Controllers.BloggingController.PostDetail (BloggingEngine) in 204.3189ms 
+2018-12-19 17:22:29.0197|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 232.8739ms 200 text/html; charset=utf-8 
+2018-12-19 17:22:34.6512|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/blogging/post/1 application/x-www-form-urlencoded 234 
+2018-12-19 17:22:34.7567|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Comment", controller = "Blogging"}. Executing action BloggingEngine.Controllers.BloggingController.Comment (BloggingEngine) 
+2018-12-19 17:22:34.9023||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 
+2018-12-19 17:22:34.9087|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method BloggingEngine.Controllers.BloggingController.Comment (BloggingEngine) with arguments (1, BloggingEngine.DataAccess.PostWithComment) - Validation state: Valid 
+2018-12-19 17:22:34.9205|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.4-rtm-31024 initialized 'BloggingContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None 
+2018-12-19 17:22:35.1843|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:22:35.4578|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (13ms) [Parameters=[@p0='?', @p1='?' (Size = 10), @p2='?' (Size = 27), @p3='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Comments" ("AuthorId", "Content", "Date", "PostId")
+VALUES (@p0, @p1, @p2, @p3);
+SELECT "Id"
+FROM "Comments"
+WHERE changes() = 1 AND "Id" = last_insert_rowid(); 
+2018-12-19 17:22:35.6919|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method BloggingEngine.Controllers.BloggingController.Comment (BloggingEngine), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 781.4608ms. 
+2018-12-19 17:22:35.6919||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 
+2018-12-19 17:22:35.6919|1|INFO|Microsoft.AspNetCore.Mvc.RedirectToActionResult|Executing RedirectResult, redirecting to /blogging/post/1. 
+2018-12-19 17:22:35.7048|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action BloggingEngine.Controllers.BloggingController.Comment (BloggingEngine) in 939.3106ms 
+2018-12-19 17:22:35.7048|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1057.8709ms 302  
+2018-12-19 17:22:35.7048|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/blogging/post/1   
+2018-12-19 17:22:35.7228|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "PostDetail", controller = "Blogging"}. Executing action BloggingEngine.Controllers.BloggingController.PostDetail (BloggingEngine) 
+2018-12-19 17:22:35.7228||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 
+2018-12-19 17:22:35.7228|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method BloggingEngine.Controllers.BloggingController.PostDetail (BloggingEngine) with arguments (1) - Validation state: Valid 
+2018-12-19 17:22:35.7366|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.4-rtm-31024 initialized 'BloggingContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None 
+2018-12-19 17:22:35.7637|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:22:35.7637|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "e"."Id", "e"."BlogId", "e"."Content", "e"."Date", "e"."Title"
+FROM "Posts" AS "e"
+WHERE "e"."Id" = @__get_Item_0
+LIMIT 1 
+2018-12-19 17:22:35.8172|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:22:35.8172|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "_bloggingContext"."Id", "_bloggingContext"."AuthorId", "_bloggingContext"."Content", "_bloggingContext"."Date", "_bloggingContext"."PostId", "_bloggingContext.Author"."Id", "_bloggingContext.Author"."FirstName", "_bloggingContext.Author"."LastName"
+FROM "Comments" AS "_bloggingContext"
+INNER JOIN "People" AS "_bloggingContext.Author" ON "_bloggingContext"."AuthorId" = "_bloggingContext.Author"."Id"
+WHERE "_bloggingContext"."PostId" = @__Id_0 
+2018-12-19 17:22:35.8539|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 17:22:35.8539|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "p"."Id", "p"."FirstName", "p"."LastName"
+FROM "People" AS "p" 
+2018-12-19 17:22:35.8539|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method BloggingEngine.Controllers.BloggingController.PostDetail (BloggingEngine), returned result Microsoft.AspNetCore.Mvc.ViewResult in 121.8949ms. 
+2018-12-19 17:22:35.8596||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 
+2018-12-19 17:22:35.8596|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view PostDetail. 
+2018-12-19 17:22:35.8596|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view PostDetail executed in 8.0312ms. 
+2018-12-19 17:22:35.8877|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action BloggingEngine.Controllers.BloggingController.PostDetail (BloggingEngine) in 162.3101ms 
+2018-12-19 17:22:35.9535|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 234.2527ms 200 text/html; charset=utf-8 

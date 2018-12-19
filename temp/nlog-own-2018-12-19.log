@@ -62,3 +62,58 @@ Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such col
    at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
    at CSharp_Pline.PokeMiddleware.InvokeAsync(HttpContext context) in D:\OneDrive - Thomas More\school 2019\ASP.NET\bloggingengine\PokeMiddleware.cs:line 22
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)|url: http://localhost/blogging/blog/1|action: Posts
+2018-12-19 17:05:24.6608||DEBUG|BloggingEngine.Program|init main |url: |action: 
+2018-12-19 17:05:51.5939||DEBUG|BloggingEngine.Program|init main |url: |action: 
+2018-12-19 17:07:36.3322||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2018-12-19 17:07:36.3626||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello |url: http://localhost/blogging|action: Index
+2018-12-19 17:07:39.5514||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2018-12-19 17:07:40.3511||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2018-12-19 17:07:40.3584||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello |url: http://localhost/blogging|action: Index
+2018-12-19 17:07:40.3974||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2018-12-19 17:08:05.6042||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/blog/1 |url: http://localhost/blogging/blog/1|action: Posts
+2018-12-19 17:08:06.1183||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/blog/1 |url: http://localhost/blogging/blog/1|action: Posts
+2018-12-19 17:13:46.2469||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: PostDetail
+2018-12-19 17:13:46.3269||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: PostDetail
+2018-12-19 17:13:59.6305||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: Comment
+2018-12-19 17:14:00.5227||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: Comment
+2018-12-19 17:14:00.5931||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: PostDetail
+2018-12-19 17:14:00.7160||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: PostDetail
+2018-12-19 17:16:00.0685||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: Comment
+2018-12-19 17:16:00.2499||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: Comment
+2018-12-19 17:16:00.2679||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: PostDetail
+2018-12-19 17:16:00.3146||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: PostDetail
+2018-12-19 17:16:25.2459||DEBUG|BloggingEngine.Program|init main |url: |action: 
+2018-12-19 17:16:28.9904||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2018-12-19 17:16:29.0173||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello |url: http://localhost/blogging|action: Index
+2018-12-19 17:16:29.2257||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2018-12-19 17:16:29.2441||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello |url: http://localhost/blogging|action: Index
+2018-12-19 17:16:31.8919||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2018-12-19 17:16:31.8919||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2018-12-19 17:16:35.2412||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/blog/1 |url: http://localhost/blogging/blog/1|action: Posts
+2018-12-19 17:16:35.7580||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/blog/1 |url: http://localhost/blogging/blog/1|action: Posts
+2018-12-19 17:16:44.4126||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: PostDetail
+2018-12-19 17:16:44.5969||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: PostDetail
+2018-12-19 17:16:51.7231||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: Comment
+2018-12-19 17:16:52.6196||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: Comment
+2018-12-19 17:16:52.6577||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: PostDetail
+2018-12-19 17:16:52.7503||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: PostDetail
+2018-12-19 17:17:13.4819||DEBUG|BloggingEngine.Program|init main |url: |action: 
+2018-12-19 17:18:48.3332||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: PostDetail
+2018-12-19 17:18:51.7795||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: PostDetail
+2018-12-19 17:18:57.3571||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: Comment
+2018-12-19 17:18:58.1286||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: Comment
+2018-12-19 17:18:58.1595||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: PostDetail
+2018-12-19 17:18:58.2362||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: PostDetail
+2018-12-19 17:20:57.7813||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: Comment
+2018-12-19 17:20:58.0014||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: Comment
+2018-12-19 17:20:58.0237||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: PostDetail
+2018-12-19 17:20:58.1252||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: PostDetail
+2018-12-19 17:21:58.4573||DEBUG|BloggingEngine.Program|init main |url: |action: 
+2018-12-19 17:22:08.5749||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: PostDetail
+2018-12-19 17:22:12.5324||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: PostDetail
+2018-12-19 17:22:28.8087||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: PostDetail
+2018-12-19 17:22:28.9254||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: PostDetail
+2018-12-19 17:22:34.9023||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: Comment
+2018-12-19 17:22:35.6919||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: Comment
+2018-12-19 17:22:35.7228||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: PostDetail
+2018-12-19 17:22:35.8596||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: PostDetail

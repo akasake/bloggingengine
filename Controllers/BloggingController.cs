@@ -235,7 +235,8 @@ namespace BloggingEngine.Controllers
             var newcomment = new BloggingEngine.DataAccess.Comment() {
                 AuthorId = item.NewComment.AuthorId,
                 Content = item.NewComment.Content,
-                PostId = Id
+                PostId = Id,
+                Date = System.DateTime.Now.ToString("hh:mm tt - dd MMMM yyy"),
             };
             _bloggingContext.Comments.Add(newcomment);
             _bloggingContext.SaveChanges();

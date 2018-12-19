@@ -9,6 +9,7 @@
 <h2>Comments</h2>
 @foreach(var comment in Model.Post.Comments) {
   <h4>@comment.Author.FirstName @comment.Author.LastName</h4>
+  <p>@comment.Date</p>
   <p>@comment.Content</p>
 }
 
