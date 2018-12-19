@@ -80,3 +80,45 @@ D:\OneDrive - Thomas More\school 2019\ASP.NET\BloggingEngine\obj\Debug\netcoreap
 D:\OneDrive - Thomas More\school 2019\ASP.NET\BloggingEngine\obj\Debug\netcoreapp2.1\BloggingEngine.csproj.CopyComplete
 D:\OneDrive - Thomas More\school 2019\ASP.NET\bloggingengine\obj\Debug\netcoreapp2.1\Razor\Views\Blogging\createAuthor.g.cshtml.cs
 D:\OneDrive - Thomas More\school 2019\ASP.NET\bloggingengine\bin\Debug\netcoreapp2.1\nlog.config
+D:\school\dotnet\blog\bloggingengine\bin\Debug\netcoreapp2.1\nlog.config
+D:\school\dotnet\blog\bloggingengine\bin\Debug\netcoreapp2.1\BloggingEngine.deps.json
+D:\school\dotnet\blog\bloggingengine\bin\Debug\netcoreapp2.1\BloggingEngine.runtimeconfig.json
+D:\school\dotnet\blog\bloggingengine\bin\Debug\netcoreapp2.1\BloggingEngine.runtimeconfig.dev.json
+D:\school\dotnet\blog\bloggingengine\bin\Debug\netcoreapp2.1\BloggingEngine.dll
+D:\school\dotnet\blog\bloggingengine\bin\Debug\netcoreapp2.1\BloggingEngine.pdb
+D:\school\dotnet\blog\bloggingengine\bin\Debug\netcoreapp2.1\BloggingEngine.Views.dll
+D:\school\dotnet\blog\bloggingengine\bin\Debug\netcoreapp2.1\BloggingEngine.Views.pdb
+D:\school\dotnet\blog\bloggingengine\obj\Debug\netcoreapp2.1\BloggingEngine.csprojAssemblyReference.cache
+D:\school\dotnet\blog\bloggingengine\obj\Debug\netcoreapp2.1\BloggingEngine.csproj.CoreCompileInputs.cache
+D:\school\dotnet\blog\bloggingengine\obj\Debug\netcoreapp2.1\BloggingEngine.RazorAssemblyInfo.cache
+D:\school\dotnet\blog\bloggingengine\obj\Debug\netcoreapp2.1\BloggingEngine.RazorAssemblyInfo.cs
+D:\school\dotnet\blog\bloggingengine\obj\Debug\netcoreapp2.1\BloggingEngine.AssemblyInfoInputs.cache
+D:\school\dotnet\blog\bloggingengine\obj\Debug\netcoreapp2.1\BloggingEngine.AssemblyInfo.cs
+D:\school\dotnet\blog\bloggingengine\obj\Debug\netcoreapp2.1\BloggingEngine.TagHelpers.input.cache
+D:\school\dotnet\blog\bloggingengine\obj\Debug\netcoreapp2.1\BloggingEngine.TagHelpers.output.cache
+D:\school\dotnet\blog\bloggingengine\obj\Debug\netcoreapp2.1\BloggingEngine.RazorCoreGenerate.cache
+D:\school\dotnet\blog\bloggingengine\obj\Debug\netcoreapp2.1\Razor\Views\Blogging\createAuthor.g.cshtml.cs
+D:\school\dotnet\blog\bloggingengine\obj\Debug\netcoreapp2.1\Razor\Views\Blogging\createBlog.g.cshtml.cs
+D:\school\dotnet\blog\bloggingengine\obj\Debug\netcoreapp2.1\Razor\Views\Blogging\createPost.g.cshtml.cs
+D:\school\dotnet\blog\bloggingengine\obj\Debug\netcoreapp2.1\Razor\Views\Blogging\deletePost.g.cshtml.cs
+D:\school\dotnet\blog\bloggingengine\obj\Debug\netcoreapp2.1\Razor\Views\Blogging\editBlog.g.cshtml.cs
+D:\school\dotnet\blog\bloggingengine\obj\Debug\netcoreapp2.1\Razor\Views\Blogging\editPost.g.cshtml.cs
+D:\school\dotnet\blog\bloggingengine\obj\Debug\netcoreapp2.1\Razor\Views\Blogging\index.g.cshtml.cs
+D:\school\dotnet\blog\bloggingengine\obj\Debug\netcoreapp2.1\Razor\Views\Blogging\postdetail.g.cshtml.cs
+D:\school\dotnet\blog\bloggingengine\obj\Debug\netcoreapp2.1\Razor\Views\Blogging\posts.g.cshtml.cs
+D:\school\dotnet\blog\bloggingengine\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+D:\school\dotnet\blog\bloggingengine\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+D:\school\dotnet\blog\bloggingengine\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+D:\school\dotnet\blog\bloggingengine\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+D:\school\dotnet\blog\bloggingengine\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+D:\school\dotnet\blog\bloggingengine\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\school\dotnet\blog\bloggingengine\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+D:\school\dotnet\blog\bloggingengine\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\school\dotnet\blog\bloggingengine\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+D:\school\dotnet\blog\bloggingengine\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+D:\school\dotnet\blog\bloggingengine\obj\Debug\netcoreapp2.1\BloggingEngine.RazorTargetAssemblyInfo.cache
+D:\school\dotnet\blog\bloggingengine\obj\Debug\netcoreapp2.1\BloggingEngine.RazorTargetAssemblyInfo.cs
+D:\school\dotnet\blog\bloggingengine\obj\Debug\netcoreapp2.1\BloggingEngine.Views.pdb
+D:\school\dotnet\blog\bloggingengine\obj\Debug\netcoreapp2.1\BloggingEngine.dll
+D:\school\dotnet\blog\bloggingengine\obj\Debug\netcoreapp2.1\BloggingEngine.pdb
+D:\school\dotnet\blog\bloggingengine\obj\Debug\netcoreapp2.1\BloggingEngine.csproj.CopyComplete

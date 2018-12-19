@@ -38,7 +38,6 @@ namespace BloggingEngine.DataAccess
 
     public class Post
     {
-        private Comment _newComment;
 
         public int Id { get; set; }
         public string Title { get; set; }
@@ -47,8 +46,7 @@ namespace BloggingEngine.DataAccess
         public int BlogId { get; set; }
         public BlogModel Blog { get; set; }
         public List<Comment> Comments { get; set; }
-
-
+        public String Date { get; set;}
     }
 
     public class Comment 
@@ -58,6 +56,7 @@ namespace BloggingEngine.DataAccess
         public int AuthorId { get; set; }
         public PersonModel Author { get; set; }
         public String Content { get; set; }
+        public String Date {get; set;}
     }
 
     public class PostWithComment{

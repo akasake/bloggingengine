@@ -18,10 +18,10 @@ public class Post
         public int Id { get; set; }
         public string Title { get; set; }
         public string Content { get; set; }
-        internal DateTime Date { get; set; }
         public int BlogId { get; set; }
         public BlogModel Blog { get; set; }
         public List<Comment> Comments { get; set; }
+        public String Date {get; set;}
 
     }
 
@@ -36,6 +36,7 @@ public class Post
         public int AuthorId { get; set; }
         public PersonModel Author { get; set; }
         public String Content { get; set; }
+        public String Date {get; set;}
     }
 
     public class PersonModel
