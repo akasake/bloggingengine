@@ -1,0 +1,126 @@
+2018-12-19 15:58:51.6696||DEBUG|BloggingEngine.Program|init main 
+2018-12-19 15:58:56.3844||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\pham_\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2018-12-19 15:59:01.5305|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/   
+2018-12-19 15:59:03.3373|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing action BloggingEngine.Controllers.HomeController.Index (BloggingEngine) 
+2018-12-19 15:59:03.3667|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method BloggingEngine.Controllers.HomeController.Index (BloggingEngine) - Validation state: Valid 
+2018-12-19 15:59:03.4020|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method BloggingEngine.Controllers.HomeController.Index (BloggingEngine), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.9923ms. 
+2018-12-19 15:59:03.4637|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2018-12-19 15:59:03.8254|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 405.4ms. 
+2018-12-19 15:59:03.8267|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action BloggingEngine.Controllers.HomeController.Index (BloggingEngine) in 488.172ms 
+2018-12-19 15:59:03.8579|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2329.1998ms 200 text/html; charset=utf-8 
+2018-12-19 15:59:03.9205|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/dist/css/bootstrap.css   
+2018-12-19 15:59:03.9225|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/css/site.css   
+2018-12-19 15:59:03.9225|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/images/banner1.svg   
+2018-12-19 15:59:03.9225|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/images/banner2.svg   
+2018-12-19 15:59:04.0542|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/images/banner2.svg'. Physical path: 'D:\OneDrive - Thomas More\school 2019\ASP.NET\bloggingengine\wwwroot\images\banner2.svg' 
+2018-12-19 15:59:04.0542|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 131.6122ms 200 image/svg+xml 
+2018-12-19 15:59:04.1080|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/images/banner1.svg'. Physical path: 'D:\OneDrive - Thomas More\school 2019\ASP.NET\bloggingengine\wwwroot\images\banner1.svg' 
+2018-12-19 15:59:04.1080|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/css/site.css'. Physical path: 'D:\OneDrive - Thomas More\school 2019\ASP.NET\bloggingengine\wwwroot\css\site.css' 
+2018-12-19 15:59:04.1241|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 201.5693ms 200 text/css 
+2018-12-19 15:59:04.1241|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 201.4982ms 200 image/svg+xml 
+2018-12-19 15:59:04.1404|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css'. Physical path: 'D:\OneDrive - Thomas More\school 2019\ASP.NET\bloggingengine\wwwroot\lib\bootstrap\dist\css\bootstrap.css' 
+2018-12-19 15:59:04.1404|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 224.4331ms 200 text/css 
+2018-12-19 15:59:04.7085|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/lib/jquery/dist/jquery.js   
+2018-12-19 15:59:04.7085|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/dist/js/bootstrap.js   
+2018-12-19 15:59:04.7216|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0   
+2018-12-19 15:59:04.7216|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/images/banner3.svg   
+2018-12-19 15:59:04.7216|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/js/site.js'. Physical path: 'D:\OneDrive - Thomas More\school 2019\ASP.NET\bloggingengine\wwwroot\js\site.js' 
+2018-12-19 15:59:04.7216|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 6.4675ms 200 application/javascript 
+2018-12-19 15:59:04.8259|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/images/banner3.svg'. Physical path: 'D:\OneDrive - Thomas More\school 2019\ASP.NET\bloggingengine\wwwroot\images\banner3.svg' 
+2018-12-19 15:59:04.8273|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 104.2712ms 200 image/svg+xml 
+2018-12-19 15:59:04.8273|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   
+2018-12-19 15:59:04.8862|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2'. Physical path: 'D:\OneDrive - Thomas More\school 2019\ASP.NET\bloggingengine\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2' 
+2018-12-19 15:59:04.8940|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 52.2634ms 200 font/woff2 
+2018-12-19 15:59:05.1318|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js'. Physical path: 'D:\OneDrive - Thomas More\school 2019\ASP.NET\bloggingengine\wwwroot\lib\bootstrap\dist\js\bootstrap.js' 
+2018-12-19 15:59:05.1318|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 425.3055ms 200 application/javascript 
+2018-12-19 15:59:05.2547|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/lib/jquery/dist/jquery.js'. Physical path: 'D:\OneDrive - Thomas More\school 2019\ASP.NET\bloggingengine\wwwroot\lib\jquery\dist\jquery.js' 
+2018-12-19 15:59:05.2547|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 547.5809ms 200 application/javascript 
+2018-12-19 15:59:05.5511|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico   
+2018-12-19 15:59:05.5806|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/favicon.ico'. Physical path: 'D:\OneDrive - Thomas More\school 2019\ASP.NET\bloggingengine\wwwroot\favicon.ico' 
+2018-12-19 15:59:05.5806|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 32.1228ms 200 image/x-icon 
+2018-12-19 15:59:47.5192|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/blogging   
+2018-12-19 15:59:47.5451|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Index", controller = "Blogging"}. Executing action BloggingEngine.Controllers.BloggingController.Index (BloggingEngine) 
+2018-12-19 15:59:48.5014||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging 
+2018-12-19 15:59:48.5014|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method BloggingEngine.Controllers.BloggingController.Index (BloggingEngine) - Validation state: Valid 
+2018-12-19 15:59:48.5146||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello 
+2018-12-19 15:59:50.0675|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.4-rtm-31024 initialized 'BloggingContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None 
+2018-12-19 15:59:50.8394|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 15:59:50.8854|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "b"."Id", "b"."AuthorId", "b"."Name", "b.Author"."Id", "b.Author"."FirstName", "b.Author"."LastName"
+FROM "Blogs" AS "b"
+INNER JOIN "People" AS "b.Author" ON "b"."AuthorId" = "b.Author"."Id" 
+2018-12-19 15:59:51.2457|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method BloggingEngine.Controllers.BloggingController.Index (BloggingEngine), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2733.349ms. 
+2018-12-19 15:59:51.2514||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging 
+2018-12-19 15:59:51.2737|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2018-12-19 15:59:51.3786|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 111.4732ms. 
+2018-12-19 15:59:51.3928|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action BloggingEngine.Controllers.BloggingController.Index (BloggingEngine) in 3844.8254ms 
+2018-12-19 15:59:51.4260|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3906.7268ms 200 text/html; charset=utf-8 
+2018-12-19 15:59:56.8884|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/blogging/blog/1   
+2018-12-19 15:59:56.9876|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Posts", controller = "Blogging"}. Executing action BloggingEngine.Controllers.BloggingController.Posts (BloggingEngine) 
+2018-12-19 15:59:57.0436||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/blog/1 
+2018-12-19 15:59:57.0603|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method BloggingEngine.Controllers.BloggingController.Posts (BloggingEngine) with arguments (1) - Validation state: Valid 
+2018-12-19 15:59:57.0701|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.4-rtm-31024 initialized 'BloggingContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None 
+2018-12-19 15:59:57.2366|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA foreign_keys=ON; 
+2018-12-19 15:59:57.3058|20102|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (10ms) [Parameters=[@__Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT "_bloggingContext"."Id", "_bloggingContext"."BlogId", "_bloggingContext"."Content", "_bloggingContext"."Date", "_bloggingContext"."Title"
+FROM "Posts" AS "_bloggingContext"
+WHERE "_bloggingContext"."BlogId" = @__Id_0 Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such column: _bloggingContext.Date'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+2018-12-19 15:59:57.4073|10100|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred in the database while iterating the results of a query for context type 'BloggingEngine.DataAccess.BloggingContext'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such column: _bloggingContext.Date'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext() Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such column: _bloggingContext.Date'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+2018-12-19 15:59:57.4073||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/blog/1 
+2018-12-19 15:59:57.4266|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action BloggingEngine.Controllers.BloggingController.Posts (BloggingEngine) in 436.8974ms 
+2018-12-19 15:59:57.4266|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such column: _bloggingContext.Date'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BloggingEngine.Controllers.BloggingController.Posts(Int32 Id) in D:\OneDrive - Thomas More\school 2019\ASP.NET\bloggingengine\Controllers\BloggingController.cs:line 123
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at CSharp_Pline.PokeMiddleware.InvokeAsync(HttpContext context) in D:\OneDrive - Thomas More\school 2019\ASP.NET\bloggingengine\PokeMiddleware.cs:line 22
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-12-19 15:59:57.6881|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 799.6656ms 500 text/html; charset=utf-8 
