@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace BloggingEngine.Models
 {
@@ -16,7 +17,13 @@ namespace BloggingEngine.Models
 public class Post
     {
         public int Id { get; set; }
+        
+        [StringLength(100, MinimumLength = 3)]
+        [Required]
         public string Title { get; set; }
+
+        [StringLength(1000, MinimumLength = 3)]
+        [Required]
         public string Content { get; set; }
         public int BlogId { get; set; }
         public BlogModel Blog { get; set; }
@@ -35,6 +42,8 @@ public class Post
         public int PostId { get; set; }
         public int AuthorId { get; set; }
         public PersonModel Author { get; set; }
+        [StringLength(1000, MinimumLength = 3)]
+        [Required]
         public String Content { get; set; }
         public String Date {get; set;}
     }
@@ -42,7 +51,13 @@ public class Post
     public class PersonModel
     {
         public int Id { get; set; }
+
+        [StringLength(60, MinimumLength = 3)]
+        [Required]
         public String FirstName { get; set; }
+
+        [StringLength(60, MinimumLength = 3)]
+        [Required]
         public String LastName { get; set; }
         
     }
@@ -53,6 +68,8 @@ public class Post
 
     public class BlogPostList{
         public List<Post> Posts { get; set; }
+        [StringLength(100, MinimumLength = 3)]
+        [Required]
         public string BlogTitle { get; set; }  
         public PersonModel Author { get; set; }
         
