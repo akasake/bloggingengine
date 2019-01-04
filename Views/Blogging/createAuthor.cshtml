@@ -1,14 +1,16 @@
 @model BloggingEngine.DataAccess.PersonModel
 
 <h2>Create a User</h2>
-
+<div asp-validation-summary="All" class="text-danger"></div>
 <form asp-controller="blogging" method="post" asp-action="CreateAuthor">
         <fieldset>
           <div>
+            <span asp-validation-for="FirstName" class="text-danger"></span>
             <label asp-for="@Model.FirstName">FirstName:</label><br>
             <input asp-for="@Model.FirstName" />
           </div>
           <div>
+            <span asp-validation-for="LastName" class="text-danger"></span>
             <label asp-for="@Model.LastName">LastName:</label><br>
             <input asp-for="@Model.LastName" />
 

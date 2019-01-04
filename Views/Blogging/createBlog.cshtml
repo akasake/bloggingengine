@@ -1,14 +1,16 @@
 @model BloggingEngine.DataAccess.BlogAndPeople
 
 <h2>Create blogpost</h2>
-
+<div asp-validation-summary="All" class="text-danger"></div>
 <form asp-controller="blogging" method="post" asp-action="CreateBlog">
         <fieldset>
           <div>
+            <span asp-validation-for="@Model.Blog.Name" class="text-danger"></span>
             <label asp-for="@Model.Blog.Name">Title:</label><br>
             <input asp-for="@Model.Blog.Name" />
           </div>
           <div>
+            <span asp-validation-for="@Model.Blog.AuthorId" class="text-danger"></span>
             <label asp-for="@Model.Blog.AuthorId">Author:</label><br>
             <select asp-for="@Model.Blog.AuthorId" class="form-control">
               @foreach(var person in Model.People) {
