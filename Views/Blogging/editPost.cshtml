@@ -1,18 +1,21 @@
 @model BloggingEngine.DataAccess.Post
 
 <h2>Edit Post</h2>
-
+<div asp-validation-summary="All" class="text-danger"></div>
 <form method="post" asp-controller="blogging" asp-action="editpost" >
         <fieldset>
           <div>
+            <span asp-validation-for="@Model.Title" class="text-danger"></span>
             <label asp-for="@Model.Title">Title:</label><br>
             <input asp-for="@Model.Title" class="form-control" placeholder="@Model.Title"/>
           </div>  
           <div>
+            <span asp-validation-for="@Model.BlogId" class="text-danger"></span>
             <label asp-for="@Model.BlogId">Blog Id:</label><br>
             <input asp-for="@Model.BlogId" class="form-control" placeholder="@Model.BlogId"/>
           </div>    
           <div>
+            <span asp-validation-for="@Model.Content" class="text-danger"></span>
             <label asp-for="@Model.Content">Content:</label><br>
             <textarea asp-for="@Model.Content" class="form-control" placeholder="@Model.Content" rows="4"></textarea>
           </div>         
