@@ -47,6 +47,7 @@ namespace BloggingEngine.Controllers
         [Route("blogging/author/create")]
         [PokeActionFilter]
         [HttpPost()]
+        [ValidateAntiForgeryToken]
         public IActionResult CreateAuthor(PersonModel person){
             if(ModelState.IsValid){
                 var newPerson = new BloggingEngine.DataAccess.PersonModel(){
@@ -77,6 +78,7 @@ namespace BloggingEngine.Controllers
         [Route("blogging/edit/blog/{id}")]
         [HttpPost()]
         [PokeActionFilter]
+        [ValidateAntiForgeryToken]
         public IActionResult EditBlog([FromRoute] int Id, BlogModel afterBlog)
         { 
             var toUpdateBlog = _bloggingContext.Blogs.Find(Id);
@@ -110,6 +112,7 @@ namespace BloggingEngine.Controllers
         [Route("blogging/create")]
         [HttpPost()]
         [PokeActionFilter]
+        [ValidateAntiForgeryToken]
         public IActionResult CreateBlog(BlogModel blog){
             var newBlog = new BloggingEngine.DataAccess.BlogModel(){
                     AuthorId = blog.AuthorId,
@@ -174,6 +177,7 @@ namespace BloggingEngine.Controllers
         [Route("blogging/edit/post/{id}")]
         [HttpPost]
         [PokeActionFilter]
+        [ValidateAntiForgeryToken]
         public IActionResult EditPost([FromRoute]int Id, Post post)
         {
             var toUpdatepost = _bloggingContext.Posts.Find(post.Id);
@@ -207,6 +211,7 @@ namespace BloggingEngine.Controllers
         [Route("blogging/create/blog/{id}/post")]
         [HttpPost()]
         [PokeActionFilter]
+        [ValidateAntiForgeryToken]
         public IActionResult CreatePost(Post post){
             var newPost = new BloggingEngine.DataAccess.Post(){
                     Title = post.Title,
@@ -214,8 +219,7 @@ namespace BloggingEngine.Controllers
                     BlogId = post.BlogId,
                     Date = System.DateTime.Now.ToString("dd MMMM yyy"),
                 };
-            if(ModelState.IsValid){
-                
+            if(ModelState.IsValid){     
                 _bloggingContext.Posts.Add(newPost);
                 _bloggingContext.SaveChanges();
                 return RedirectToAction("Index");
