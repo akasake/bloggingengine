@@ -48,12 +48,15 @@ namespace BloggingEngine.Controllers
         [PokeActionFilter]
         [HttpPost()]
         public IActionResult CreateAuthor(PersonModel person){
-            var newPerson = new BloggingEngine.DataAccess.PersonModel(){
-                FirstName = person.FirstName,
-                LastName = person.LastName,
-            };
-            _bloggingContext.People.Add(newPerson);
-            _bloggingContext.SaveChanges();
+            if(ModelState.IsValid){
+                var newPerson = new BloggingEngine.DataAccess.PersonModel(){
+                    FirstName = person.FirstName,
+                    LastName = person.LastName,
+                };
+                _bloggingContext.People.Add(newPerson);
+                _bloggingContext.SaveChanges();
+            }
+            
             return RedirectToAction("Index");
         }
 
@@ -77,10 +80,15 @@ namespace BloggingEngine.Controllers
         public IActionResult EditBlog([FromRoute] int Id, BlogModel afterBlog)
         { 
             var toUpdateBlog = _bloggingContext.Blogs.Find(Id);
-            toUpdateBlog.Name = afterBlog.Name;
-            _bloggingContext.Blogs.Update(toUpdateBlog);
-            _bloggingContext.SaveChanges();
-            return RedirectToAction("Index");
+                toUpdateBlog.Name = afterBlog.Name;
+            if(ModelState.IsValid){
+                
+                _bloggingContext.Blogs.Update(toUpdateBlog);
+                _bloggingContext.SaveChanges();
+                
+                return RedirectToAction("Index");
+            }
+            return View(toUpdateBlog);
         }
 
 
@@ -104,12 +112,16 @@ namespace BloggingEngine.Controllers
         [PokeActionFilter]
         public IActionResult CreateBlog(BlogModel blog){
             var newBlog = new BloggingEngine.DataAccess.BlogModel(){
-                AuthorId = blog.AuthorId,
-                Name = blog.Name
-            };
-            _bloggingContext.Blogs.Add(newBlog);
-            _bloggingContext.SaveChanges();
-            return RedirectToAction("Index");
+                    AuthorId = blog.AuthorId,
+                    Name = blog.Name
+                };
+            if(ModelState.IsValid){
+                
+                _bloggingContext.Blogs.Add(newBlog);
+                _bloggingContext.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(newBlog);
         }
         
 
@@ -165,14 +177,19 @@ namespace BloggingEngine.Controllers
         public IActionResult EditPost([FromRoute]int Id, Post post)
         {
             var toUpdatepost = _bloggingContext.Posts.Find(post.Id);
-            toUpdatepost.Id = post.Id;
-            toUpdatepost.Title = post.Title;
-            toUpdatepost.Content = post.Content;
-            toUpdatepost.BlogId = post.BlogId;
-            //toUpdatepost.Date = DateTime.Now.ToString("dd/MM/yyyy");
-            _bloggingContext.Posts.Update(toUpdatepost);
-            _bloggingContext.SaveChanges();
-            return RedirectToAction("posts");
+                toUpdatepost.Id = post.Id;
+                toUpdatepost.Title = post.Title;
+                toUpdatepost.Content = post.Content;
+                toUpdatepost.BlogId = post.BlogId;
+            if(ModelState.IsValid){
+                
+                //toUpdatepost.Date = DateTime.Now.ToString("dd/MM/yyyy");
+                _bloggingContext.Posts.Update(toUpdatepost);
+                _bloggingContext.SaveChanges();
+                return RedirectToAction("posts");
+            }
+            return View(post);
+
         }
 
 
@@ -190,16 +207,20 @@ namespace BloggingEngine.Controllers
         [Route("blogging/create/blog/{id}/post")]
         [HttpPost()]
         [PokeActionFilter]
-        public IActionResult CreateBlog(Post post){
+        public IActionResult CreatePost(Post post){
             var newPost = new BloggingEngine.DataAccess.Post(){
-                Title = post.Title,
-                Content = post.Content,
-                BlogId = post.BlogId,
-                Date = System.DateTime.Now.ToString("dd MMMM yyy"),
-            };
-            _bloggingContext.Posts.Add(newPost);
-            _bloggingContext.SaveChanges();
-            return RedirectToAction("Index");
+                    Title = post.Title,
+                    Content = post.Content,
+                    BlogId = post.BlogId,
+                    Date = System.DateTime.Now.ToString("dd MMMM yyy"),
+                };
+            if(ModelState.IsValid){
+                
+                _bloggingContext.Posts.Add(newPost);
+                _bloggingContext.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(newPost);
         }
 
         // show details of a Post
