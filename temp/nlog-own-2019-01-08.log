@@ -1,0 +1,11 @@
+2019-01-08 19:44:53.7403||DEBUG|BloggingEngine.Program|init main |url: |action: 
+2019-01-08 19:46:41.7704||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2019-01-08 19:46:41.7856||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello |url: http://localhost/blogging|action: Index
+2019-01-08 19:46:45.6831||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2019-01-08 19:46:50.3803||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/author/create |url: http://localhost/blogging/author/create|action: CreateAuthor
+2019-01-08 19:46:50.3914||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/author/create |url: http://localhost/blogging/author/create|action: CreateAuthor
+2019-01-08 19:47:03.5377||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/author/create |url: http://localhost/blogging/author/create|action: CreateAuthor
+2019-01-08 19:47:04.2106||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/author/create |url: http://localhost/blogging/author/create|action: CreateAuthor
+2019-01-08 19:47:04.2341||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2019-01-08 19:47:04.2547||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello |url: http://localhost/blogging|action: Index
+2019-01-08 19:47:04.3189||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index

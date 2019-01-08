@@ -49,16 +49,18 @@ namespace BloggingEngine.Controllers
         [HttpPost()]
         [ValidateAntiForgeryToken]
         public IActionResult CreateAuthor(PersonModel person){
-            if(ModelState.IsValid){
-                var newPerson = new BloggingEngine.DataAccess.PersonModel(){
+            var newPerson = new BloggingEngine.DataAccess.PersonModel(){
                     FirstName = person.FirstName,
                     LastName = person.LastName,
                 };
+            if(ModelState.IsValid){
+                
                 _bloggingContext.People.Add(newPerson);
                 _bloggingContext.SaveChanges();
+                return RedirectToAction("Index");
             }
+            return View(newPerson);
             
-            return RedirectToAction("Index");
         }
 
         // edit blog show
