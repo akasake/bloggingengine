@@ -10,6 +10,9 @@ namespace BloggingEngine.Models
         public List<Post> Posts { get; set; }
         public int AuthorId { get; set; }
         public PersonModel Author { get; set; }
+        
+        [StringLength(100, MinimumLength = 3)]
+        [Required]
         public string Name { get; set; }  
         
     }
