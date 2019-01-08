@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using BloggingEngine.Models;
 using BloggingEngine.DataAccess;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
@@ -39,7 +40,7 @@ namespace BloggingEngine.Controllers
         [Route("blogging/author/create")]
         [HttpGet()]
         public IActionResult CreateAuthor(){
-            var emptyPerson = new PersonModel();
+            var emptyPerson = new PersonModelModel();
             return View(emptyPerson);
         }
 
@@ -48,7 +49,7 @@ namespace BloggingEngine.Controllers
         [PokeActionFilter]
         [HttpPost()]
         [ValidateAntiForgeryToken]
-        public IActionResult CreateAuthor(PersonModel person){
+        public IActionResult CreateAuthor(PersonModelModel person){
             var newPerson = new BloggingEngine.DataAccess.PersonModel(){
                     FirstName = person.FirstName,
                     LastName = person.LastName,
@@ -59,7 +60,7 @@ namespace BloggingEngine.Controllers
                 _bloggingContext.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(newPerson);
+            return View(person);
             
         }
 
@@ -70,10 +71,13 @@ namespace BloggingEngine.Controllers
         public IActionResult EditBlog([FromRoute] int Id)
         { 
             var blog = _bloggingContext.Blogs.Find(Id);
+            var blogModel = new BlogModelModel(){
+                Name = blog.Name,
+            };
             if(blog == null){
                 return RedirectToAction("Index");
             };
-            return View(blog);
+            return View(blogModel);
         }
 
         // saving edited blog
@@ -81,7 +85,7 @@ namespace BloggingEngine.Controllers
         [HttpPost()]
         [PokeActionFilter]
         [ValidateAntiForgeryToken]
-        public IActionResult EditBlog([FromRoute] int Id, BlogModel afterBlog)
+        public IActionResult EditBlog([FromRoute] int Id, BlogModelModel afterBlog)
         { 
             var toUpdateBlog = _bloggingContext.Blogs.Find(Id);
                 toUpdateBlog.Name = afterBlog.Name;
@@ -92,7 +96,7 @@ namespace BloggingEngine.Controllers
                 
                 return RedirectToAction("Index");
             }
-            return View(toUpdateBlog);
+            return View(afterBlog);
         }
 
 
@@ -101,11 +105,11 @@ namespace BloggingEngine.Controllers
         [HttpGet()]
         [PokeActionFilter]
         public IActionResult CreateBlog(){
-            var emptyBlog = new BlogModel();
+            var emptyBlog = new BlogModelModel();
             var people = _bloggingContext.People.ToList();
-            var ep = new BlogAndPeople(){
+            var ep = new BlogAndPeopleModel(){
                 Blog = emptyBlog,
-                People = people
+                People = people,
             };
             return View(ep);
         }
@@ -115,7 +119,7 @@ namespace BloggingEngine.Controllers
         [HttpPost()]
         [PokeActionFilter]
         [ValidateAntiForgeryToken]
-        public IActionResult CreateBlog(BlogModel blog){
+        public IActionResult CreateBlog(BlogModelModel blog){
             var newBlog = new BloggingEngine.DataAccess.BlogModel(){
                     AuthorId = blog.AuthorId,
                     Name = blog.Name
@@ -126,7 +130,12 @@ namespace BloggingEngine.Controllers
                 _bloggingContext.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(newBlog);
+            var people = _bloggingContext.People.ToList();
+            var ep = new BlogAndPeopleModel(){
+                Blog = blog,
+                People = people,
+            };
+            return View(ep);
         }
         
 
@@ -168,11 +177,19 @@ namespace BloggingEngine.Controllers
         public IActionResult EditPost([FromRoute]int Id)
         {
             var post = _bloggingContext.Posts.Find(Id);
+            var postModel = new PostModel {
+                Id= post.Id,
+                Title = post.Title,
+                Content = post.Content,
+                BlogId = post.BlogId,
+
+            };
             if(post == null){
                 return RedirectToAction("Index");
             };
+            
 
-            return View(post);
+            return View(postModel);
         }
 
         // save edit post
@@ -180,15 +197,15 @@ namespace BloggingEngine.Controllers
         [HttpPost]
         [PokeActionFilter]
         [ValidateAntiForgeryToken]
-        public IActionResult EditPost([FromRoute]int Id, Post post)
+        public IActionResult EditPost([FromRoute]int Id, PostModel post)
         {
-            var toUpdatepost = _bloggingContext.Posts.Find(post.Id);
+            
+            if(ModelState.IsValid){
+                var toUpdatepost = _bloggingContext.Posts.Find(post.Id);
                 toUpdatepost.Id = post.Id;
                 toUpdatepost.Title = post.Title;
                 toUpdatepost.Content = post.Content;
                 toUpdatepost.BlogId = post.BlogId;
-            if(ModelState.IsValid){
-                
                 //toUpdatepost.Date = DateTime.Now.ToString("dd/MM/yyyy");
                 _bloggingContext.Posts.Update(toUpdatepost);
                 _bloggingContext.SaveChanges();
@@ -204,7 +221,7 @@ namespace BloggingEngine.Controllers
         [HttpGet()]
         [PokeActionFilter]
         public IActionResult CreatePost([FromRoute]int Id){
-            var emptyPost = new Post();
+            var emptyPost = new PostModel();
             emptyPost.BlogId = Id;
             return View(emptyPost);
         }
@@ -214,7 +231,7 @@ namespace BloggingEngine.Controllers
         [HttpPost()]
         [PokeActionFilter]
         [ValidateAntiForgeryToken]
-        public IActionResult CreatePost(Post post){
+        public IActionResult CreatePost(PostModel post){
             var newPost = new BloggingEngine.DataAccess.Post(){
                     Title = post.Title,
                     Content = post.Content,
@@ -226,7 +243,7 @@ namespace BloggingEngine.Controllers
                 _bloggingContext.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(newPost);
+            return View(post);
         }
 
         // show details of a Post
@@ -238,15 +255,22 @@ namespace BloggingEngine.Controllers
             var post = _bloggingContext.Posts.Find(Id);
             if(post == null){
                 return RedirectToAction("Index");
-
             };
             var comments = _bloggingContext.Comments.Where(_bloggingContext => _bloggingContext.PostId == Id).Include(c => c.Author).ToList();
-            post.Comments= comments;
+            var postModel = new PostModel(){
+                Id = post.Id,
+                Title = post.Title,
+                Content = post.Content,
+                BlogId = post.BlogId,
+                Blog = post.Blog,
+                Comments = comments,
+                Date = post.Date
+            };
             var people = _bloggingContext.People.ToList();
-            var newcomment = new Comment();
+            var newcomment = new CommentModelModel();
             var pc = new PostWithComment(){
                 NewComment = newcomment,
-                Post = post,
+                Post = postModel,
                 People = people
             };
 
@@ -259,16 +283,19 @@ namespace BloggingEngine.Controllers
         [PokeActionFilter]
         public IActionResult Comment([FromRoute]int Id, PostWithComment item)
         {
-            var newcomment = new BloggingEngine.DataAccess.Comment() {
-                AuthorId = item.NewComment.AuthorId,
-                Content = item.NewComment.Content,
-                PostId = Id,
-                Date = System.DateTime.Now.ToString("hh:mm tt - dd MMMM yyy"),
-            };
-            _bloggingContext.Comments.Add(newcomment);
-            _bloggingContext.SaveChanges();
-
+            if(ModelState.IsValid){
+                var newcomment = new BloggingEngine.DataAccess.Comment() {
+                    AuthorId = item.NewComment.AuthorId,
+                    Content = item.NewComment.Content,
+                    PostId = Id,
+                    Date = System.DateTime.Now.ToString("hh:mm tt - dd MMMM yyy"),
+                };
+                _bloggingContext.Comments.Add(newcomment);
+                _bloggingContext.SaveChanges();
+                return RedirectToAction("postdetail");
+            }
             return RedirectToAction("postdetail");
+            
         }
 
         // delete post page

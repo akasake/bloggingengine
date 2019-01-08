@@ -1,23 +1,24 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using BloggingEngine.DataAccess;
 
 namespace BloggingEngine.Models
 {
-   public class BlogModel
+   public class BlogModelModel
     {
         public int Id { get; set; }
-        public List<Post> Posts { get; set; }
+        public List<PostModel> Posts { get; set; }
         public int AuthorId { get; set; }
         public PersonModel Author { get; set; }
-        
+
         [StringLength(100, MinimumLength = 3)]
         [Required]
         public string Name { get; set; }  
         
     }
 
-public class Post
+public class PostModel
     {
         public int Id { get; set; }
         
@@ -35,23 +36,23 @@ public class Post
 
     }
 
-    public class PostWithComment{
-        public Comment NewComment { get; set; }
-        public Post Post { get; set; }
+    public class PostWithCommentModel{
+        public CommentModelModel NewComment { get; set; }
+        public PostModel Post { get; set; }
     }
-    public class Comment 
+    public class CommentModelModel
     {
         public int Id { get; set; }
         public int PostId { get; set; }
         public int AuthorId { get; set; }
-        public PersonModel Author { get; set; }
+        public PersonModelModel Author { get; set; }
         [StringLength(1000, MinimumLength = 3)]
         [Required]
         public String Content { get; set; }
         public String Date {get; set;}
     }
 
-    public class PersonModel
+    public class PersonModelModel
     {
         public int Id { get; set; }
 
@@ -64,21 +65,32 @@ public class Post
         public String LastName { get; set; }
         
     }
-    public class PeopleList{
+    public class PeopleListModel{
         public List<PersonModel> Peoples { get; set; }
     }
 
 
-    public class BlogPostList{
-        public List<Post> Posts { get; set; }
+    public class BlogPostListModel{
+        public List<PostModel> Posts { get; set; }
         [StringLength(100, MinimumLength = 3)]
         [Required]
         public string BlogTitle { get; set; }  
-        public PersonModel Author { get; set; }
+        public PersonModelModel Author { get; set; }
         
     }
-    public class BlogList{
-        public List<BlogModel> Blogs { get; set; }
+    public class BlogListModel{
+        public List<BlogModelModel> Blogs { get; set; }
+    }
+
+    public class BlogAndPeopleModel{
+        public BlogModelModel Blog{ get; set; }
+        public List<PersonModel> People { get; set; }
+    }
+
+    public class PostWithComment{
+        public CommentModelModel NewComment { get; set; }
+        public PostModel Post { get; set; }
+        public List<PersonModel> People { get; set; }
     }
 
 }

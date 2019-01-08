@@ -30,10 +30,7 @@ namespace BloggingEngine.DataAccess
         public PersonModel Author { get; set; }
         public string Name { get; set; }  
     }
-    public class BlogAndPeople{
-        public BlogModel Blog{ get; set; }
-        public List<PersonModel> People { get; set; }
-    }
+    
 
 
     public class Post
@@ -59,11 +56,7 @@ namespace BloggingEngine.DataAccess
         public String Date {get; set;}
     }
 
-    public class PostWithComment{
-        public Comment NewComment { get; set; }
-        public Post Post { get; set; }
-        public List<PersonModel> People { get; set; }
-    }
+    
 
     public class PersonModel
     {

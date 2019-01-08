@@ -9,3 +9,365 @@
 2019-01-08 19:47:04.2341||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
 2019-01-08 19:47:04.2547||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello |url: http://localhost/blogging|action: Index
 2019-01-08 19:47:04.3189||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2019-01-08 19:50:18.4607||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/author/create |url: http://localhost/blogging/author/create|action: CreateAuthor
+2019-01-08 19:50:18.4705||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/author/create |url: http://localhost/blogging/author/create|action: CreateAuthor
+2019-01-08 19:50:22.0846||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/author/create |url: http://localhost/blogging/author/create|action: CreateAuthor
+2019-01-08 19:50:22.2961||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/author/create |url: http://localhost/blogging/author/create|action: CreateAuthor
+2019-01-08 19:50:22.3154||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2019-01-08 19:50:22.3154||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello |url: http://localhost/blogging|action: Index
+2019-01-08 19:50:22.3642||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2019-01-08 19:50:44.1668||DEBUG|BloggingEngine.Program|init main |url: |action: 
+2019-01-08 19:51:09.9098||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2019-01-08 19:51:09.9372||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello |url: http://localhost/blogging|action: Index
+2019-01-08 19:51:13.1901||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2019-01-08 19:51:21.6583||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/create |url: http://localhost/blogging/create|action: CreateBlog
+2019-01-08 19:51:21.7753||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/create |url: http://localhost/blogging/create|action: CreateBlog
+2019-01-08 19:51:31.9358||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/create |url: http://localhost/blogging/create|action: CreateBlog
+2019-01-08 19:51:32.7699||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/create |url: http://localhost/blogging/create|action: CreateBlog
+2019-01-08 19:51:32.8390||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2019-01-08 19:51:32.8635||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello |url: http://localhost/blogging|action: Index
+2019-01-08 19:51:32.9256||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2019-01-08 19:53:04.0952||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2019-01-08 19:53:04.1105||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello |url: http://localhost/blogging|action: Index
+2019-01-08 19:53:04.1595||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2019-01-08 19:53:50.2439||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/create |url: http://localhost/blogging/create|action: CreateBlog
+2019-01-08 19:53:50.2799||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/create |url: http://localhost/blogging/create|action: CreateBlog
+2019-01-08 19:53:55.1546||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/create |url: http://localhost/blogging/create|action: CreateBlog
+2019-01-08 19:54:25.4605|10000|ERROR|Microsoft.EntityFrameworkCore.Update|An exception occurred in the database while saving changes for context type 'BloggingEngine.DataAccess.BloggingContext'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 5: 'database is locked'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at Microsoft.Data.Sqlite.SqliteConnectionExtensions.ExecuteNonQuery(SqliteConnection connection, String commandText)
+   at Microsoft.Data.Sqlite.SqliteTransaction..ctor(SqliteConnection connection, IsolationLevel isolationLevel)
+   at Microsoft.Data.Sqlite.SqliteConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionWithNoPreconditions(IsolationLevel isolationLevel)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(DbContext _, ValueTuple`2 parameters)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.NoopExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess) Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 5: 'database is locked'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at Microsoft.Data.Sqlite.SqliteConnectionExtensions.ExecuteNonQuery(SqliteConnection connection, String commandText)
+   at Microsoft.Data.Sqlite.SqliteTransaction..ctor(SqliteConnection connection, IsolationLevel isolationLevel)
+   at Microsoft.Data.Sqlite.SqliteConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionWithNoPreconditions(IsolationLevel isolationLevel)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(DbContext _, ValueTuple`2 parameters)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.NoopExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)|url: http://localhost/blogging/create|action: CreateBlog
+2019-01-08 19:54:25.4811||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/create |url: http://localhost/blogging/create|action: CreateBlog
+2019-01-08 19:54:25.4996|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 5: 'database is locked'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteNonQuery()
+   at Microsoft.Data.Sqlite.SqliteConnectionExtensions.ExecuteNonQuery(SqliteConnection connection, String commandText)
+   at Microsoft.Data.Sqlite.SqliteTransaction..ctor(SqliteConnection connection, IsolationLevel isolationLevel)
+   at Microsoft.Data.Sqlite.SqliteConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransactionWithNoPreconditions(IsolationLevel isolationLevel)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(DbContext _, ValueTuple`2 parameters)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.NoopExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at BloggingEngine.Controllers.BloggingController.CreateBlog(BlogModel blog) in D:\OneDrive - Thomas More\school 2019\ASP.NET\bloggingengine\Controllers\BloggingController.cs:line 126
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at CSharp_Pline.PokeMiddleware.InvokeAsync(HttpContext context) in D:\OneDrive - Thomas More\school 2019\ASP.NET\bloggingengine\PokeMiddleware.cs:line 22
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)|url: http://localhost/blogging/create|action: CreateBlog
+2019-01-08 19:55:51.7210||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/create |url: http://localhost/blogging/create|action: CreateBlog
+2019-01-08 19:55:51.7705||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/create |url: http://localhost/blogging/create|action: CreateBlog
+2019-01-08 19:55:54.4424||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/create |url: http://localhost/blogging/create|action: CreateBlog
+2019-01-08 19:56:09.2189||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/create |url: http://localhost/blogging/create|action: CreateBlog
+2019-01-08 19:56:09.4113||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2019-01-08 19:56:09.5357||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello |url: http://localhost/blogging|action: Index
+2019-01-08 19:56:09.6104||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2019-01-08 19:57:03.3182||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2019-01-08 19:57:03.3310||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello |url: http://localhost/blogging|action: Index
+2019-01-08 19:57:03.3778||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2019-01-08 20:05:28.7334||DEBUG|BloggingEngine.Program|init main |url: |action: 
+2019-01-08 20:05:49.7117||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2019-01-08 20:05:49.7359||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello |url: http://localhost/blogging|action: Index
+2019-01-08 20:05:55.8134||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2019-01-08 20:06:00.2733||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/create |url: http://localhost/blogging/create|action: CreateBlog
+2019-01-08 20:06:00.3311||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/create |url: http://localhost/blogging/create|action: CreateBlog
+2019-01-08 20:06:02.6617||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/create |url: http://localhost/blogging/create|action: CreateBlog
+2019-01-08 20:06:04.0690||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/create |url: http://localhost/blogging/create|action: CreateBlog
+2019-01-08 20:06:04.9555||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2019-01-08 20:06:05.0911||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello |url: http://localhost/blogging|action: Index
+2019-01-08 20:06:05.3925||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2019-01-08 20:20:48.3506||DEBUG|BloggingEngine.Program|init main |url: |action: 
+2019-01-08 20:20:58.6823||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2019-01-08 20:20:58.7199||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello |url: http://localhost/blogging|action: Index
+2019-01-08 20:21:01.7979||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2019-01-08 20:21:04.0950||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/author/create |url: http://localhost/blogging/author/create|action: CreateAuthor
+2019-01-08 20:21:04.1104||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/author/create |url: http://localhost/blogging/author/create|action: CreateAuthor
+2019-01-08 20:21:09.8861||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/author/create |url: http://localhost/blogging/author/create|action: CreateAuthor
+2019-01-08 20:21:09.9062||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/author/create |url: http://localhost/blogging/author/create|action: CreateAuthor
+2019-01-08 20:24:47.6430||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/author/create |url: http://localhost/blogging/author/create|action: CreateAuthor
+2019-01-08 20:24:48.5985||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/author/create |url: http://localhost/blogging/author/create|action: CreateAuthor
+2019-01-08 20:24:48.6463||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2019-01-08 20:24:48.6561||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello |url: http://localhost/blogging|action: Index
+2019-01-08 20:24:48.7510||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2019-01-08 21:34:28.9680||DEBUG|BloggingEngine.Program|init main |url: |action: 
+2019-01-08 21:35:07.0802||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2019-01-08 21:35:07.0950||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello |url: http://localhost/blogging|action: Index
+2019-01-08 21:35:09.5254||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2019-01-08 21:35:19.4384||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/create |url: http://localhost/blogging/create|action: CreateBlog
+2019-01-08 21:35:19.5373||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/create |url: http://localhost/blogging/create|action: CreateBlog
+2019-01-08 21:35:23.0401||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/create |url: http://localhost/blogging/create|action: CreateBlog
+2019-01-08 21:35:23.0651||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/create |url: http://localhost/blogging/create|action: CreateBlog
+2019-01-08 21:35:23.0794|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'BloggingEngine.Models.BlogModelModel', but this ViewDataDictionary instance requires a model item of type 'BloggingEngine.Models.BlogAndPeopleModel'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at CSharp_Pline.PokeMiddleware.InvokeAsync(HttpContext context) in D:\OneDrive - Thomas More\school 2019\ASP.NET\bloggingengine\PokeMiddleware.cs:line 22
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)|url: http://localhost/blogging/create|action: CreateBlog
+2019-01-08 21:38:54.5959||DEBUG|BloggingEngine.Program|init main |url: |action: 
+2019-01-08 21:39:06.7707||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/create |url: http://localhost/blogging/create|action: CreateBlog
+2019-01-08 21:39:09.9399||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/create |url: http://localhost/blogging/create|action: CreateBlog
+2019-01-08 21:39:17.0996||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/create |url: http://localhost/blogging/create|action: CreateBlog
+2019-01-08 21:39:17.1413||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/create |url: http://localhost/blogging/create|action: CreateBlog
+2019-01-08 21:39:23.3308||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/create |url: http://localhost/blogging/create|action: CreateBlog
+2019-01-08 21:39:24.1659||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/create |url: http://localhost/blogging/create|action: CreateBlog
+2019-01-08 21:39:24.1876||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2019-01-08 21:39:24.2081||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello |url: http://localhost/blogging|action: Index
+2019-01-08 21:39:24.8178||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2019-01-08 21:39:32.2988||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/edit/blog/5 |url: http://localhost/blogging/edit/blog/5|action: EditBlog
+2019-01-08 21:39:32.5018||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/edit/blog/5 |url: http://localhost/blogging/edit/blog/5|action: EditBlog
+2019-01-08 21:39:32.5327|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'BloggingEngine.DataAccess.BlogModel', but this ViewDataDictionary instance requires a model item of type 'BloggingEngine.Models.BlogModelModel'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at CSharp_Pline.PokeMiddleware.InvokeAsync(HttpContext context) in D:\OneDrive - Thomas More\school 2019\ASP.NET\bloggingengine\PokeMiddleware.cs:line 22
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)|url: http://localhost/blogging/edit/blog/5|action: EditBlog
+2019-01-08 21:40:47.0329||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2019-01-08 21:40:47.0504||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello |url: http://localhost/blogging|action: Index
+2019-01-08 21:40:47.1402||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2019-01-08 21:40:49.7862||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/edit/blog/1 |url: http://localhost/blogging/edit/blog/1|action: EditBlog
+2019-01-08 21:40:49.8148||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/edit/blog/1 |url: http://localhost/blogging/edit/blog/1|action: EditBlog
+2019-01-08 21:40:49.8330|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'BloggingEngine.DataAccess.BlogModel', but this ViewDataDictionary instance requires a model item of type 'BloggingEngine.Models.BlogModelModel'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at CSharp_Pline.PokeMiddleware.InvokeAsync(HttpContext context) in D:\OneDrive - Thomas More\school 2019\ASP.NET\bloggingengine\PokeMiddleware.cs:line 22
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)|url: http://localhost/blogging/edit/blog/1|action: EditBlog
+2019-01-08 21:41:23.6982||DEBUG|BloggingEngine.Program|init main |url: |action: 
+2019-01-08 21:41:26.9678||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/ |url: http://localhost/blogging/|action: Index
+2019-01-08 21:41:26.9872||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello |url: http://localhost/blogging/|action: Index
+2019-01-08 21:41:31.3707||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/ |url: http://localhost/blogging/|action: Index
+2019-01-08 21:44:42.6228||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/edit/blog/1 |url: http://localhost/blogging/edit/blog/1|action: EditBlog
+2019-01-08 21:44:42.8886||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/edit/blog/1 |url: http://localhost/blogging/edit/blog/1|action: EditBlog
+2019-01-08 21:44:50.0332||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/edit/blog/1 |url: http://localhost/blogging/edit/blog/1|action: EditBlog
+2019-01-08 21:44:50.5804||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/edit/blog/1 |url: http://localhost/blogging/edit/blog/1|action: EditBlog
+2019-01-08 21:44:50.6094||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2019-01-08 21:44:50.6094||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello |url: http://localhost/blogging|action: Index
+2019-01-08 21:44:50.6569||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2019-01-08 21:44:53.6118||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/edit/blog/2 |url: http://localhost/blogging/edit/blog/2|action: EditBlog
+2019-01-08 21:44:53.6431||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/edit/blog/2 |url: http://localhost/blogging/edit/blog/2|action: EditBlog
+2019-01-08 21:44:56.4373||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/edit/blog/2 |url: http://localhost/blogging/edit/blog/2|action: EditBlog
+2019-01-08 21:44:56.4741||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/edit/blog/2 |url: http://localhost/blogging/edit/blog/2|action: EditBlog
+2019-01-08 21:45:00.3466||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/edit/blog/2 |url: http://localhost/blogging/edit/blog/2|action: EditBlog
+2019-01-08 21:45:00.5507||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/edit/blog/2 |url: http://localhost/blogging/edit/blog/2|action: EditBlog
+2019-01-08 21:45:00.5701||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2019-01-08 21:45:00.5831||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello |url: http://localhost/blogging|action: Index
+2019-01-08 21:45:00.6252||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2019-01-08 21:45:06.7675||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/blog/2 |url: http://localhost/blogging/blog/2|action: Posts
+2019-01-08 21:45:06.9129||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/blog/2 |url: http://localhost/blogging/blog/2|action: Posts
+2019-01-08 21:45:09.9008||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/create/blog/2/post |url: http://localhost/blogging/create/blog/2/post|action: CreatePost
+2019-01-08 21:45:09.9127||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/create/blog/2/post |url: http://localhost/blogging/create/blog/2/post|action: CreatePost
+2019-01-08 21:45:15.5527||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/create/blog/2/post |url: http://localhost/blogging/create/blog/2/post|action: CreatePost
+2019-01-08 21:45:15.5972||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/create/blog/2/post |url: http://localhost/blogging/create/blog/2/post|action: CreatePost
+2019-01-08 21:45:22.7561||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/create/blog/2/post |url: http://localhost/blogging/create/blog/2/post|action: CreatePost
+2019-01-08 21:45:23.2047||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/create/blog/2/post |url: http://localhost/blogging/create/blog/2/post|action: CreatePost
+2019-01-08 21:45:23.2356||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2019-01-08 21:45:23.2628||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello |url: http://localhost/blogging|action: Index
+2019-01-08 21:45:23.3466||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2019-01-08 21:45:36.1095||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/blog/2 |url: http://localhost/blogging/blog/2|action: Posts
+2019-01-08 21:45:36.3478||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/blog/2 |url: http://localhost/blogging/blog/2|action: Posts
+2019-01-08 21:50:13.2794||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/edit/post/2 |url: http://localhost/blogging/edit/post/2|action: EditPost
+2019-01-08 21:50:13.3658||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/edit/post/2 |url: http://localhost/blogging/edit/post/2|action: EditPost
+2019-01-08 21:50:20.6425||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/edit/post/2 |url: http://localhost/blogging/edit/post/2|action: EditPost
+2019-01-08 21:50:20.6658||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/edit/post/2 |url: http://localhost/blogging/edit/post/2|action: EditPost
+2019-01-08 21:50:28.5838||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/edit/post/2 |url: http://localhost/blogging/edit/post/2|action: EditPost
+2019-01-08 21:50:28.5962||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/edit/post/2 |url: http://localhost/blogging/edit/post/2|action: EditPost
+2019-01-08 21:56:35.7606||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/edit/post/2 |url: http://localhost/blogging/edit/post/2|action: EditPost
+2019-01-08 21:56:35.7707||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/edit/post/2 |url: http://localhost/blogging/edit/post/2|action: EditPost
+2019-01-08 21:56:47.5017||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/edit/post/0 |url: http://localhost/blogging/edit/post/0|action: EditPost
+2019-01-08 21:56:47.7522||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/edit/post/0 |url: http://localhost/blogging/edit/post/0|action: EditPost
+2019-01-08 21:56:47.7687||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/blog/0 |url: http://localhost/blogging/blog/0|action: Posts
+2019-01-08 21:56:47.8109||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/blog/0 |url: http://localhost/blogging/blog/0|action: Posts
+2019-01-08 21:56:47.8449||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2019-01-08 21:56:47.8449||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello |url: http://localhost/blogging|action: Index
+2019-01-08 21:56:47.8619||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2019-01-08 21:56:58.0626||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/edit/blog/3 |url: http://localhost/blogging/edit/blog/3|action: EditBlog
+2019-01-08 21:56:58.0802||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/edit/blog/3 |url: http://localhost/blogging/edit/blog/3|action: EditBlog
+2019-01-08 21:57:03.2405||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/edit/blog/3 |url: http://localhost/blogging/edit/blog/3|action: EditBlog
+2019-01-08 21:57:03.4443||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/edit/blog/3 |url: http://localhost/blogging/edit/blog/3|action: EditBlog
+2019-01-08 21:57:03.4696||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2019-01-08 21:57:03.4696||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello |url: http://localhost/blogging|action: Index
+2019-01-08 21:57:03.5044||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2019-01-08 21:57:06.3269||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/edit/blog/4 |url: http://localhost/blogging/edit/blog/4|action: EditBlog
+2019-01-08 21:57:06.3443||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/edit/blog/4 |url: http://localhost/blogging/edit/blog/4|action: EditBlog
+2019-01-08 21:57:11.4068||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/edit/blog/4 |url: http://localhost/blogging/edit/blog/4|action: EditBlog
+2019-01-08 21:57:11.5861||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/edit/blog/4 |url: http://localhost/blogging/edit/blog/4|action: EditBlog
+2019-01-08 21:57:11.5958||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2019-01-08 21:57:11.6122||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello |url: http://localhost/blogging|action: Index
+2019-01-08 21:57:11.6425||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2019-01-08 21:57:16.0038||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/blog/2 |url: http://localhost/blogging/blog/2|action: Posts
+2019-01-08 21:57:16.0778||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/blog/2 |url: http://localhost/blogging/blog/2|action: Posts
+2019-01-08 21:57:18.5673||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/create/blog/2/post |url: http://localhost/blogging/create/blog/2/post|action: CreatePost
+2019-01-08 21:57:18.5804||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/create/blog/2/post |url: http://localhost/blogging/create/blog/2/post|action: CreatePost
+2019-01-08 21:57:24.9735||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/create/blog/2/post |url: http://localhost/blogging/create/blog/2/post|action: CreatePost
+2019-01-08 21:57:25.0018||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/create/blog/2/post |url: http://localhost/blogging/create/blog/2/post|action: CreatePost
+2019-01-08 21:57:32.1057||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/create/blog/2/post |url: http://localhost/blogging/create/blog/2/post|action: CreatePost
+2019-01-08 21:57:32.2882||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/create/blog/2/post |url: http://localhost/blogging/create/blog/2/post|action: CreatePost
+2019-01-08 21:57:32.3312||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2019-01-08 21:57:32.3486||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello |url: http://localhost/blogging|action: Index
+2019-01-08 21:57:32.4253||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging |url: http://localhost/blogging|action: Index
+2019-01-08 21:57:38.0462||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/edit/blog/2 |url: http://localhost/blogging/edit/blog/2|action: EditBlog
+2019-01-08 21:57:38.0794||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/edit/blog/2 |url: http://localhost/blogging/edit/blog/2|action: EditBlog
+2019-01-08 21:57:42.3799||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/blog/2 |url: http://localhost/blogging/blog/2|action: Posts
+2019-01-08 21:57:42.4295||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/blog/2 |url: http://localhost/blogging/blog/2|action: Posts
+2019-01-08 21:57:45.3943||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/3 |url: http://localhost/blogging/post/3|action: PostDetail
+2019-01-08 21:57:45.5164||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/3 |url: http://localhost/blogging/post/3|action: PostDetail
+2019-01-08 22:21:22.1282||DEBUG|BloggingEngine.Program|init main |url: |action: 
+2019-01-08 22:21:41.4143||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/ |url: http://localhost/blogging/|action: Index
+2019-01-08 22:21:41.4380||INFO|BloggingEngine.Controllers.BloggingController|Index page says hello |url: http://localhost/blogging/|action: Index
+2019-01-08 22:21:44.2500||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/ |url: http://localhost/blogging/|action: Index
+2019-01-08 22:21:49.1648||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/blog/1 |url: http://localhost/blogging/blog/1|action: Posts
+2019-01-08 22:21:49.8515||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/blog/1 |url: http://localhost/blogging/blog/1|action: Posts
+2019-01-08 22:21:53.9980||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: PostDetail
+2019-01-08 22:21:54.2508||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: PostDetail
+2019-01-08 22:22:05.0630||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: Comment
+2019-01-08 22:22:05.0788||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: Comment
+2019-01-08 22:22:05.0949|3|ERROR|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|The view 'Comment' was not found. Searched locations: /Views/Blogging/Comment.cshtml, /Views/Shared/Comment.cshtml, /Pages/Shared/Comment.cshtml |url: http://localhost/blogging/post/1|action: Comment
+2019-01-08 22:22:05.1163|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The view 'Comment' was not found. The following locations were searched:
+/Views/Blogging/Comment.cshtml
+/Views/Shared/Comment.cshtml
+/Pages/Shared/Comment.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at CSharp_Pline.PokeMiddleware.InvokeAsync(HttpContext context) in D:\OneDrive - Thomas More\school 2019\ASP.NET\bloggingengine\PokeMiddleware.cs:line 22
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)|url: http://localhost/blogging/post/1|action: Comment
+2019-01-08 22:22:55.3306||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: PostDetail
+2019-01-08 22:22:55.4837||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: PostDetail
+2019-01-08 22:23:01.0338||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: Comment
+2019-01-08 22:23:02.0991||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: Comment
+2019-01-08 22:23:02.1913||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: PostDetail
+2019-01-08 22:23:02.2959||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: PostDetail
+2019-01-08 22:29:40.3135||DEBUG|BloggingEngine.Program|init main |url: |action: 
+2019-01-08 22:29:46.3948||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: PostDetail
+2019-01-08 22:29:46.6276||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: PostDetail
+2019-01-08 22:29:49.8735||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: PostDetail
+2019-01-08 22:29:49.8735||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: PostDetail
+2019-01-08 22:29:58.3330||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: Comment
+2019-01-08 22:29:58.3482||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: Comment
+2019-01-08 22:29:58.5023||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: PostDetail
+2019-01-08 22:29:58.6242||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: PostDetail
+2019-01-08 22:30:02.8943||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: Comment
+2019-01-08 22:30:02.9557||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: Comment
+2019-01-08 22:30:03.0467||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: PostDetail
+2019-01-08 22:30:03.1263||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: PostDetail
+2019-01-08 22:30:06.9866||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: Comment
+2019-01-08 22:30:06.9994||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: Comment
+2019-01-08 22:30:07.0807||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: PostDetail
+2019-01-08 22:30:07.1863||INFO|CSharp_Pline.Controllers.PokeActionFilter|/blogging/post/1 |url: http://localhost/blogging/post/1|action: PostDetail
