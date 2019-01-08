@@ -281,20 +281,45 @@ namespace BloggingEngine.Controllers
         [Route("blogging/post/{id}")]
         [HttpPost]
         [PokeActionFilter]
-        public IActionResult Comment([FromRoute]int Id, PostWithComment item)
+        public IActionResult PostDetail([FromRoute]int Id, PostWithComment item)
         {
-            if(ModelState.IsValid){
-                var newcomment = new BloggingEngine.DataAccess.Comment() {
+            var newcomment = new BloggingEngine.DataAccess.Comment() {
                     AuthorId = item.NewComment.AuthorId,
                     Content = item.NewComment.Content,
                     PostId = Id,
                     Date = System.DateTime.Now.ToString("hh:mm tt - dd MMMM yyy"),
                 };
+            if(ModelState.IsValid){
                 _bloggingContext.Comments.Add(newcomment);
                 _bloggingContext.SaveChanges();
                 return RedirectToAction("postdetail");
             }
-            return RedirectToAction("postdetail");
+            var postId = item.Post.Id;
+            var post = _bloggingContext.Posts.Find(postId);
+
+            var comments = _bloggingContext.Comments.Where(_bloggingContext => _bloggingContext.PostId == postId).Include(c => c.Author).ToList();
+            var postModel = new PostModel(){
+                Id = postId,
+                Title = post.Title,
+                Content = post.Content,
+                BlogId = post.BlogId,
+                Blog = post.Blog,
+                Comments = comments,
+                Date = post.Date
+            };
+            var people = _bloggingContext.People.ToList();
+            var newC = new CommentModelModel(){
+                AuthorId = newcomment.AuthorId,
+                Content = newcomment.Content,
+                PostId = newcomment.PostId,
+                Date = newcomment.Date
+            };
+            var pc = new PostWithComment(){
+                NewComment = newC,
+                Post = postModel,
+                People = people
+            };
+            return View( pc );
             
         }
 
